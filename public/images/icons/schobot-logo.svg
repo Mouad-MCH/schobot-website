@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="180" viewBox="0 0 760 180" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="36" y1="40" x2="142" y2="138" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18C9D4"/>
+      <stop offset="1" stop-color="#00A99D"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="116" y1="44" x2="212" y2="132" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00A99D"/>
+      <stop offset="1" stop-color="#59E7A6"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(18 12)">
+    <rect x="18" y="42" width="112" height="82" rx="41" stroke="url(#g1)" stroke-width="22"/>
+    <rect x="98" y="42" width="112" height="82" rx="41" stroke="url(#g2)" stroke-width="22"/>
+    <circle cx="74" cy="83" r="16" fill="#07384D"/>
+    <circle cx="154" cy="83" r="16" fill="#07384D"/>
+    <circle cx="68" cy="77" r="4.5" fill="#FFFFFF" opacity="0.92"/>
+    <circle cx="148" cy="77" r="4.5" fill="#FFFFFF" opacity="0.92"/>
+  </g>
+  <text x="260" y="112" fill="#07384D"
+        font-family="Inter, Arial, Helvetica, sans-serif"
+        font-size="76" font-weight="700" letter-spacing="-2.5">Schobot</text>
+</svg>

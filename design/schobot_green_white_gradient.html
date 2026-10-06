@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Schobot is an academic technology company building tools for research, learning and training." />
+  <title>Schobot — Academic Technology for Research & Learning</title>
+  <style>
+:root{
+  --ink:#102A2E;
+  --muted:#64787A;
+  --line:#DCEBEA;
+  --violet:#00A99D;
+  --violet2:#18C9D4;
+  --pink:#F9BA18;
+  --cyan:#18C9D4;
+  --blue:#064B68;
+  --dark:#063A45;
+  --paper:#ffffff;
+  --soft:#F5FAFA;
+  --shadow:0 25px 70px rgba(6,75,104,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font-family:Poppins,Arial,sans-serif;line-height:1.75;overflow-x:hidden}
+html[dir="rtl"] body{font-family:Tajawal,Poppins,Arial,sans-serif}
+a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}.wrap{width:min(1180px,calc(100% - 44px));margin:auto}
+.header{position:relative;z-index:80}.mini-bar{background:#063A45;color:#D4E9E8;font-size:11px}.mini-inner{height:34px;display:flex;align-items:center;justify-content:space-between}.mini-contact{display:flex;gap:24px}
+.nav-wrap{height:82px;background:rgba(255,255,255,.97);border-bottom:1px solid rgba(236,236,244,.95);position:sticky;top:0;z-index:80;box-shadow:0 2px 15px rgba(6,75,104,.035)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:22px}.logo{display:flex;align-items:center;gap:10px;min-width:max-content}.logo-symbol{width:38px;height:30px;display:flex;align-items:flex-end;gap:3px}.logo-symbol i{display:block;width:9px;border-radius:4px 4px 2px 2px;transform:skewY(-22deg);background:linear-gradient(180deg,#18C9D4,#064B68)}.logo-symbol i:nth-child(1){height:18px}.logo-symbol i:nth-child(2){height:30px;background:linear-gradient(180deg,#00A99D,#007D78)}.logo-symbol i:nth-child(3){height:23px;background:linear-gradient(180deg,#F9BA18,#00A99D)}.logo-word{font-size:22px;font-weight:600;letter-spacing:-.05em;color:#07384D}
+.menu{display:flex;align-items:center;gap:24px;font-size:13px;font-weight:500;color:#335A60}.menu>a,.menu-drop>button{transition:.2s}.menu>a:hover,.menu-drop>button:hover{color:var(--violet)}.menu button{border:0;background:transparent;color:inherit;cursor:pointer}.menu-drop{position:relative}.menu-drop>button{padding:26px 0}.drop-panel{position:absolute;top:70px;left:-25px;width:270px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 45px rgba(6,75,104,.12);border-radius:4px;padding:15px;display:none}.menu-drop:hover .drop-panel{display:flex;flex-direction:column}.drop-panel a{padding:9px 11px;font-size:12px;border-radius:4px}.drop-panel a:hover{background:#f6f6fb;color:var(--violet)}html[dir="rtl"] .drop-panel{left:auto;right:-25px}.search-btn{font-size:20px;line-height:1}.lang-btn{padding:8px 2px;font-size:12px}.start-btn{color:#fff!important;background:linear-gradient(90deg,#00A99D,#18C9D4)!important;border-radius:3px!important;padding:12px 19px!important;box-shadow:0 8px 22px rgba(0,169,157,.22)}.mobile-menu{display:none;border:0;background:transparent;width:34px;height:30px;padding:4px;cursor:pointer}.mobile-menu span{display:block;height:2px;background:#244B51;margin:5px 0}
+.hero{position:relative;background:#fff;overflow:hidden}.slider{position:relative;min-height:640px}.slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .65s ease,visibility .65s ease;background:radial-gradient(circle at 78% 46%,rgba(24,201,212,.07),transparent 30%),linear-gradient(180deg,#fff,#fbfbff)}.slide.active{opacity:1;visibility:visible;position:relative}.hero-grid{min-height:640px;display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:40px;padding:58px 0 78px}.hero-copy{max-width:540px}.hero-tag,.section-eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.18em;color:var(--violet);text-transform:uppercase}.hero h1{font-size:clamp(38px,4.6vw,63px);line-height:1.16;letter-spacing:-.035em;margin:16px 0 18px;font-weight:600}.hero p{font-size:15px;color:var(--muted);max-width:500px}.read-more,.arrow-link{display:inline-flex;align-items:center;margin-top:16px;color:#07384D;font-weight:600;font-size:13px}.read-more::after,.arrow-link::after{content:'↗';margin-inline-start:10px;color:var(--pink);font-size:15px}.slider-controls{position:absolute;z-index:10;left:50%;bottom:24px;transform:translateX(-50%);display:flex;align-items:center;gap:17px}.slider-controls>button{border:0;background:none;color:#6B8589;font-size:25px;cursor:pointer}.dots{display:flex;align-items:center;gap:10px}.dots button{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:#C9DEDD;cursor:pointer}.dots button.active{width:22px;border-radius:10px;background:linear-gradient(90deg,var(--violet),var(--pink))}
+.hero-art{position:relative;height:470px;filter:drop-shadow(0 30px 45px rgba(6,75,104,.11));transform:translateZ(0)}.hero-art:before{content:'';position:absolute;left:10%;right:4%;bottom:24px;height:90px;background:radial-gradient(ellipse,rgba(0,169,157,.13),transparent 65%)}.iso-floor{position:absolute;width:350px;height:230px;left:25%;top:42%;transform:rotate(30deg) skewX(-30deg);background:linear-gradient(140deg,#E6F6F4,#C4ECE8);border-radius:18px;box-shadow:inset 0 0 0 2px rgba(255,255,255,.75)}.brain-orb{position:absolute;width:180px;height:180px;left:42%;top:25%;border-radius:50%;background:linear-gradient(160deg,#F3FCFB 12%,#9FE0DA 55%,#00A99D);box-shadow:inset -18px -18px 35px rgba(0,125,120,.16),0 18px 25px rgba(6,75,104,.14)}.brain-orb:before{content:'';position:absolute;inset:24px;border-radius:50%;border:8px double rgba(255,255,255,.72);filter:blur(.1px)}.brain-lines{position:absolute;inset:47px 35px;border-radius:50%;border:3px dotted #007D78}.server{position:absolute;width:88px;height:90px;border-radius:7px;background:linear-gradient(160deg,#0A7680,#064B68);box-shadow:inset -10px -10px 0 rgba(6,58,69,.18)}.server:before,.server:after{content:'';position:absolute;left:12px;right:12px;height:5px;border-radius:5px;background:#64DED8;box-shadow:0 16px 0 #18C9D4,0 32px 0 #53BAC2}.s1{right:4%;bottom:68px}.s2{right:18%;bottom:35px;transform:scale(.8)}.screen{position:absolute;width:155px;height:106px;border-radius:8px;background:#07384D;border:8px solid #F4FBFA;box-shadow:0 12px 28px rgba(6,75,104,.14);padding:16px}.screen span{display:block;height:5px;border-radius:5px;background:#18C9D4;margin:8px 0}.screen span:nth-child(2){width:60%;background:#F9BA18}.sc1{right:5%;top:53px;transform:rotate(7deg)}.sc2{left:6%;top:85px;transform:rotate(-8deg);width:120px;height:82px}.chip{position:absolute;width:95px;height:95px;left:18%;bottom:38px;background:linear-gradient(145deg,#00A99D,#18C9D4);transform:rotate(30deg) skew(-12deg);border:10px solid #F4FBFA;box-shadow:0 14px 30px rgba(6,75,104,.16)}.spark{position:absolute;width:9px;height:9px;border-radius:50%;background:#F9BA18;box-shadow:0 0 0 6px rgba(240,92,142,.08)}.sp1{left:22%;top:22%}.sp2{right:25%;top:18%;background:#18C9D4}.sp3{right:12%;top:42%;background:#F9BA18}
+.art-ocr .scanner{position:absolute;left:16%;top:20%;width:190px;height:270px;border-radius:88px 88px 28px 28px;background:linear-gradient(180deg,#EDF9F8,#4BBFC5 45%,#007D78);border:18px solid rgba(250,252,255,.82);box-shadow:inset 0 0 0 2px rgba(90,95,171,.22)}.art-ocr .scanner:before{content:'';position:absolute;left:29px;right:29px;top:82px;height:84px;border-radius:50%;background:radial-gradient(circle,#37c9d8 1px,transparent 2px);background-size:13px 13px;background-color:#064B68;opacity:.9}.doc{position:absolute;width:150px;height:198px;background:#fff;border-radius:7px;box-shadow:0 22px 45px rgba(6,75,104,.14);padding:32px 20px}.doc i{display:block;height:5px;background:#C5E3E0;margin:15px 0;border-radius:4px}.d-a{right:22%;top:85px;transform:rotate(4deg)}.d-b{right:5%;top:125px;transform:rotate(12deg) scale(.86);opacity:.9}.magnifier{position:absolute;width:67px;height:67px;border:9px solid #064B68;border-radius:50%;right:8%;top:200px}.magnifier:after{content:'';position:absolute;width:55px;height:10px;background:#064B68;border-radius:10px;right:-43px;bottom:-24px;transform:rotate(43deg)}.scan-beam{position:absolute;left:47%;right:9%;top:255px;height:3px;background:#F9BA18;box-shadow:0 0 15px #F9BA18}.node-cloud{position:absolute;width:38px;height:25px;border-radius:30px;background:#E5F5F3;box-shadow:15px 3px 0 -6px #B8E0DD,-15px 5px 0 -8px #C9E8E5}.n1{right:31%;top:38px}.n2{right:4%;bottom:78px}
+.art-speech .audio-deck{position:absolute;left:10%;bottom:42px;width:265px;height:150px;border-radius:50% 50% 20px 20px;background:linear-gradient(145deg,#063A45,#075E67);transform:rotate(-12deg);box-shadow:0 18px 40px rgba(6,58,69,.20);display:flex;align-items:center;justify-content:center;gap:10px;padding:22px}.audio-deck b{display:block;width:7px;background:linear-gradient(#18C9D4,#F9BA18);border-radius:5px}.audio-deck b:nth-child(1){height:28px}.audio-deck b:nth-child(2){height:70px}.audio-deck b:nth-child(3){height:43px}.audio-deck b:nth-child(4){height:85px}.audio-deck b:nth-child(5){height:54px}.audio-deck b:nth-child(6){height:32px}.audio-deck b:nth-child(7){height:72px}.audio-deck b:nth-child(8){height:46px}.audio-deck b:nth-child(9){height:62px}.mic-capsule{position:absolute;left:45%;top:80px;width:145px;height:205px;border-radius:70px 70px 40px 40px;background:linear-gradient(180deg,#62D8D1,#00A99D 55%,#064B68);border:14px solid #F5FAFA}.mic-capsule:before{content:'';position:absolute;left:33px;right:33px;top:34px;height:66px;border-radius:35px;background:repeating-linear-gradient(90deg,#075E67 0 5px,#18C9D4 5px 10px)}.speech-card{position:absolute;right:5%;top:62px;width:180px;height:120px;background:#fff;border-radius:8px;box-shadow:0 22px 45px rgba(6,75,104,.14);padding:24px}.speech-card i{display:block;height:5px;background:#B9DEDA;margin:12px 0}.speech-card i:nth-child(2){width:60%;background:#18C9D4}.speech-card i:nth-child(3){width:80%;background:#ef6999}.sound-ring{position:absolute;border:3px solid rgba(74,195,216,.45);border-radius:50%;left:39%;top:50px}.r1{width:240px;height:240px}.r2{width:290px;height:290px;left:35%;top:26px;border-color:rgba(239,91,143,.18)}.mini-server{position:absolute;right:13%;bottom:46px;width:115px;height:90px;background:linear-gradient(160deg,#5764c6,#34437c);border-radius:6px}.mini-server:before{content:'';position:absolute;left:15px;right:15px;top:20px;height:4px;background:#42d2d7;box-shadow:0 18px 0 #f06a9b,0 36px 0 #8ca9e9}
+.art-tts .speaker{position:absolute;left:18%;bottom:62px;width:185px;height:205px;border-radius:22px;background:linear-gradient(150deg,#5367ca,#2e386c);box-shadow:inset -18px -18px 0 rgba(24,25,74,.12)}.speaker:before,.speaker:after{content:'';position:absolute;left:47px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,#161a3b 0 25%,#18C9D4 26% 34%,#363c74 35% 65%,#f25e91 66% 72%,#20254b 73%);top:20px}.speaker:after{top:112px;width:58px;height:58px;left:63px}.text-sheet{position:absolute;right:16%;top:72px;width:190px;height:235px;background:#fff;border-radius:8px;box-shadow:0 22px 45px rgba(6,75,104,.14);padding:42px 28px;transform:rotate(4deg)}.text-sheet i{display:block;height:6px;border-radius:5px;background:#c8d6ed;margin:17px 0}.text-sheet i:nth-child(2){width:75%;background:#7d6ee0}.voice-wave{position:absolute;left:43%;top:42%;width:140px;height:3px;background:#f05e92;box-shadow:20px -17px 0 -1px #6a64d4,40px 12px 0 -1px #38c8d6,65px -25px 0 -1px #f05e92,90px 15px 0 -1px #6a64d4}.headphones{position:absolute;right:3%;bottom:48px;width:150px;height:125px;border:17px solid #665dd0;border-bottom:0;border-radius:90px 90px 0 0}.headphones:before,.headphones:after{content:'';position:absolute;width:35px;height:62px;background:#f06697;border-radius:14px;bottom:-10px}.headphones:before{left:-23px}.headphones:after{right:-23px}.pulse{position:absolute;border:2px solid rgba(49,200,215,.34);border-radius:50%}.p1{width:250px;height:250px;left:25%;top:50px}.p2{width:310px;height:310px;left:20%;top:20px;border-color:rgba(240,77,135,.16)}
+.section{padding:100px 0}.about{background:#fff}.about-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:80px}.about-art{height:440px;position:relative}.platform{position:absolute;width:330px;height:215px;left:18%;top:30%;transform:rotate(30deg) skewX(-30deg);background:linear-gradient(140deg,#eff2ff,#d1ddf5);border-radius:16px}.core-stack{position:absolute;left:43%;top:17%;width:115px;height:185px}.core-stack div{position:absolute;left:0;width:115px;height:70px;border-radius:50%;background:linear-gradient(180deg,#79c5e8,#7167cc);border:10px solid rgba(255,255,255,.72)}.core-stack div:nth-child(1){top:0}.core-stack div:nth-child(2){top:54px;background:linear-gradient(180deg,#f08bb5,#7d67d1)}.core-stack div:nth-child(3){top:108px;background:linear-gradient(180deg,#5fcad7,#5776c9)}.analytics-card{position:absolute;width:130px;height:93px;background:#fff;border-radius:8px;box-shadow:0 15px 35px rgba(69,61,120,.12);padding:18px}.analytics-card i{display:inline-block;width:12px;background:#5a6bd4;margin:0 5px;vertical-align:bottom}.a1{right:4%;top:40px;transform:rotate(6deg)}.a1 i:nth-child(1){height:32px}.a1 i:nth-child(2){height:48px;background:#ef5f92}.a1 i:nth-child(3){height:23px;background:#36c7d4}.a2{left:2%;top:85px;transform:rotate(-5deg)}.a2 i{display:block;height:5px!important;width:80%!important;margin:12px;background:#bac9e9}.a2 i:nth-child(2){width:55%!important;background:#ef6b9c}.human{position:absolute;width:20px;height:86px;background:#5965b3;border-radius:10px}.human:before{content:'';position:absolute;width:24px;height:24px;border-radius:50%;top:-21px;left:-2px;background:#24294a}.h1{left:11%;bottom:55px}.h2{right:10%;bottom:52px;background:#e65b8e}.gear{position:absolute;width:105px;height:105px;border:18px dashed #6e72c8;border-radius:50%;left:40%;bottom:10px}.about-copy h2,.center-title h2,.products-title h2,.cta-inner h2{font-size:clamp(31px,3.6vw,48px);line-height:1.23;letter-spacing:-.03em;margin:12px 0 21px;font-weight:600}.about-copy p{font-size:14px;color:var(--muted);margin:0 0 15px}.arrow-link{margin-top:14px}
+.tech{background:#fbfbfe}.center-title{text-align:center;max-width:760px;margin:0 auto 70px}.center-title p{color:var(--muted);font-size:14px;max-width:660px;margin:0 auto}.tech-row{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:85px;margin:0 0 115px}.tech-row.reverse{grid-template-columns:.95fr 1.05fr}.tech-row.reverse .tech-visual{order:2}.tech-row.reverse .tech-copy{order:1}.tech-visual{height:410px;position:relative;background:radial-gradient(circle at center,rgba(100,91,210,.06),transparent 58%)}.tech-copy{position:relative}.tech-copy .number{position:absolute;right:0;top:-40px;font-size:88px;font-weight:700;color:#f0f0f7;line-height:1}.tech-copy h3{font-size:29px;line-height:1.25;margin:0 0 9px;font-weight:600;position:relative}.tech-copy h4{font-size:16px;color:#505166;margin:0 0 15px;font-weight:500}.tech-copy p{color:var(--muted);font-size:14px;margin:0;position:relative}.visual-speech .tech-pod{position:absolute;width:180px;height:180px;border-radius:50%;left:32%;top:24%;background:linear-gradient(180deg,#c5d7f4,#7a68d3);border:22px solid #F4FBFA;box-shadow:0 25px 45px rgba(72,62,130,.17)}.visual-speech .tech-pod:before{content:'';position:absolute;inset:32px;border-radius:50%;border:5px dashed #ef6b9d}.tech-laptop{position:absolute;right:4%;top:48px;width:165px;height:105px;background:#272b52;border:9px solid #f2f3fb;border-radius:5px;transform:rotate(7deg)}.tech-laptop:before{content:'';position:absolute;left:15px;right:15px;top:23px;height:5px;background:#44cbd7;box-shadow:0 16px 0 #ec5f91,0 32px 0 #6673d1}.tech-phone{position:absolute;right:4%;bottom:40px;width:75px;height:120px;background:#292c57;border:7px solid #f1f3fb;border-radius:11px;transform:rotate(11deg)}.tech-console{position:absolute;left:3%;bottom:42px;width:210px;height:118px;background:#24274d;border-radius:24px;transform:rotate(-12deg);padding:32px}.tech-console i{display:inline-block;width:30px;height:30px;border-radius:50%;background:#43cad7;margin:8px}.tech-console i:nth-child(2){background:#ef6597}.tech-console i:nth-child(3){background:#7867d8}.tech-wave{position:absolute;left:8%;top:60px;width:130px;height:80px;border-left:3px solid #6a70d1;border-bottom:3px solid #6a70d1;transform:skewY(-17deg)}.tech-wave:after{content:'';position:absolute;left:10px;right:10px;bottom:10px;height:3px;background:#ef5c91;box-shadow:18px -22px 0 #32c8d7,40px -10px 0 #ef5c91,62px -42px 0 #6b6ed0,85px -26px 0 #35cad6}.glass-cylinder{position:absolute;left:7%;top:24px;width:180px;height:265px;border-radius:90px 90px 25px 25px;background:linear-gradient(180deg,rgba(255,255,255,.8),rgba(100,178,231,.68) 48%,rgba(96,95,189,.8));border:17px solid rgba(244,247,255,.88)}.glass-cylinder:after{content:'';position:absolute;left:30px;right:30px;top:95px;height:78px;border-radius:50%;background:radial-gradient(circle,#55c8d7 1px,transparent 2px);background-size:12px 12px;background-color:#2f5393}.paper{position:absolute;width:135px;height:175px;background:#fff;border-radius:4px;padding:26px 20px;box-shadow:0 16px 35px rgba(61,54,111,.11)}.paper i{display:block;height:5px;background:#becde8;margin:15px 0;border-radius:4px}.p-a{right:27%;top:45px}.p-b{right:5%;top:90px;transform:scale(.83) rotate(8deg)}.ocr-machine{position:absolute;width:160px;height:155px;right:19%;bottom:30px;background:linear-gradient(150deg,#6b75d1,#3d65ae);clip-path:polygon(8% 22%,70% 0,100% 32%,90% 100%,28% 94%,0 62%)}.search-glass{position:absolute;width:55px;height:55px;border:8px solid #24375f;border-radius:50%;right:4%;top:50px}.search-glass:after{content:'';position:absolute;width:50px;height:8px;background:#24375f;border-radius:6px;right:-38px;bottom:-22px;transform:rotate(43deg)}.robot-head{position:absolute;left:34%;top:50px;width:150px;height:190px;border-radius:70px 70px 45px 45px;background:linear-gradient(180deg,#fff,#e8eefc);border:7px solid #d9e1f6;box-shadow:0 20px 35px rgba(61,53,115,.1)}.robot-head:before{content:'';position:absolute;left:25px;right:25px;top:55px;height:50px;border-radius:27px;background:#2c2b56;box-shadow:inset 28px 0 0 #42c9d5}.robot-head:after{content:'';position:absolute;width:6px;height:25px;background:#ef5d91;left:72px;bottom:30px;border-radius:5px}.data-bars{position:absolute;width:120px;height:90px;background:#fff;border-radius:6px;box-shadow:0 15px 35px rgba(62,54,111,.11)}.b1{left:5%;top:80px;transform:rotate(-8deg)}.b2{right:3%;top:65px;transform:rotate(8deg)}.data-bars:before{content:'';position:absolute;left:20px;bottom:20px;width:12px;height:34px;background:#5b68cf;box-shadow:22px -15px 0 #ef5f92,44px -2px 0 #18C9D4,66px -29px 0 #f0b944}.nlp-card{position:absolute;width:115px;height:75px;background:#fff;border-radius:6px;box-shadow:0 15px 30px rgba(61,53,111,.1)}.c1{left:3%;bottom:62px}.c2{right:6%;bottom:56px}.nlp-chip{position:absolute;left:40%;bottom:35px;width:95px;height:95px;background:linear-gradient(110deg,#59E7A6 0%,#9AF0C7 32%,#DDF9EC 64%,#FFFFFF 100%);clip-path:polygon(25% 0,75% 0,100% 25%,100% 75%,75% 100%,25% 100%,0 75%,0 25%)}
+.products{background:#fff}.products-title{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:45px}.products-title h2{max-width:720px}.outline-btn{border:1px solid #dedeea;padding:12px 19px;border-radius:3px;font-size:12px;font-weight:600;transition:.2s}.outline-btn:hover{border-color:var(--violet);color:var(--violet)}.product-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:27px;max-width:none;margin:0 auto}.product-card{background:#fff;border:1px solid #ededf3;transition:.3s;box-shadow:0 4px 14px rgba(40,38,74,.025)}.product-card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}.product-image{height:250px;position:relative;overflow:hidden;background:linear-gradient(145deg,#f5f6fc,#e9ecf8)}.product-info{padding:24px 25px 27px}.product-info span{font-size:10px;letter-spacing:.08em;color:var(--violet);text-transform:uppercase}.product-info h3{font-size:17px;line-height:1.45;margin:9px 0 0;font-weight:600}.prod-ocr{background:linear-gradient(140deg,#e9effd,#d9d6f6)}.id-card{position:absolute;width:195px;height:118px;background:#fff;border-radius:10px;left:19%;top:56px;box-shadow:0 18px 34px rgba(67,56,119,.13);transform:rotate(-6deg)}.id-card:before{content:'';position:absolute;width:42px;height:42px;border-radius:50%;left:18px;top:25px;background:linear-gradient(#68cbd8,#6c69d4)}.id-card:after{content:'';position:absolute;left:75px;right:18px;top:28px;height:5px;background:#b8c6df;box-shadow:0 16px 0 #d4dbea,0 32px 0 #ef729f}.id-scan{position:absolute;left:10%;right:10%;top:118px;height:2px;background:#ef5e92;box-shadow:0 0 15px #ef5e92}.prod-speech{background:linear-gradient(145deg,#312a63,#546bd1)}.prod-mic{position:absolute;width:78px;height:125px;border-radius:40px;background:linear-gradient(#ef8aba,#8c6ede);left:39%;top:43px;border:10px solid rgba(255,255,255,.18)}.prod-mic:before{content:'';position:absolute;width:50px;height:20px;border-left:5px solid #5be0e1;border-right:5px solid #5be0e1;left:4px;top:30px}.prod-wave{position:absolute;left:13%;right:13%;bottom:45px;height:3px;background:#63d9df;box-shadow:20px -12px 0 #ef6a9b,45px 8px 0 #8c7de8,75px -18px 0 #66e2e2,108px 10px 0 #ef6a9b,140px -8px 0 #8c7de8,175px 6px 0 #68e0e0}.prod-nlp{background:linear-gradient(145deg,#edf6ff,#e8defa)}.arabic-mark{position:absolute;left:33%;top:34px;font-family:Tajawal,sans-serif;font-size:106px;font-weight:700;color:#6f65d7;line-height:1}.prod-nodes{position:absolute;width:160px;height:110px;right:10%;bottom:24px;background:radial-gradient(circle at 10% 60%,#ef6494 0 8px,transparent 9px),radial-gradient(circle at 45% 22%,#34c8d5 0 8px,transparent 9px),radial-gradient(circle at 78% 68%,#695fd0 0 8px,transparent 9px),radial-gradient(circle at 54% 76%,#f2ba45 0 7px,transparent 8px)}.prod-nodes:before,.prod-nodes:after{content:'';position:absolute;height:2px;background:#8a8ed5;transform-origin:left}.prod-nodes:before{width:115px;left:17px;top:65px;transform:rotate(-28deg)}.prod-nodes:after{width:96px;left:61px;top:28px;transform:rotate(32deg)}
+.industries{background:#fafafe}.industry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.industry{background:#fff;border:1px solid #ececf3;padding:35px 25px;text-align:center;transition:.25s}.industry:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(50,46,95,.09)}.industry span{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;margin:0 auto 15px;background:linear-gradient(135deg,#6e62d4,#e8649c);color:#fff;font-size:24px}.industry h3{font-size:14px;margin:0;font-weight:600}.partners{padding:45px 0;background:#fff;border-top:1px solid #f0f0f5;border-bottom:1px solid #f0f0f5}.partner-row{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;align-items:center;text-align:center;color:#a7a7b6;font-size:17px;font-weight:700;letter-spacing:.12em}.contact-cta{background:linear-gradient(120deg,#655cd2 0%,#695dd4 42%,#ef6494 100%);color:#fff;padding:66px 0}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:40px}.section-eyebrow.light{color:#d8f8ff}.cta-inner h2{margin-bottom:8px}.cta-inner p{margin:0;color:#f0edff;font-size:14px}.white-btn{border:0;background:#fff;color:#383751;border-radius:3px;padding:14px 25px;font-weight:600;font-size:13px;cursor:pointer;box-shadow:0 12px 28px rgba(45,35,91,.18)}
+.footer{background:#242744;color:#b7b9ca;padding:78px 0 24px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr .9fr;gap:60px}.footer-logo .logo-word{color:#fff}.footer-about p{max-width:320px;font-size:12px;margin-top:18px}.footer h4{margin:0 0 18px;color:#fff;font-size:14px}.footer-grid>div:not(:first-child){display:flex;flex-direction:column;gap:9px;font-size:12px}.footer-grid p{margin:0}.footer a:hover{color:#fff}.footer-bottom{border-top:1px solid rgba(255,255,255,.09);margin-top:60px;padding-top:22px;display:flex;justify-content:space-between;gap:30px;font-size:10px;color:#789397}
+.modal{position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;padding:24px}.modal.open{display:flex}.modal-backdrop{position:absolute;inset:0;background:rgba(6,42,46,.68);backdrop-filter:blur(5px)}.modal-card{position:relative;z-index:2;background:#fff;width:min(760px,100%);max-height:90vh;overflow:auto;padding:44px;border-radius:5px;box-shadow:0 30px 90px rgba(6,42,46,.30)}.modal-close{position:absolute;right:18px;top:14px;border:0;background:none;font-size:28px;color:#6B8589;cursor:pointer}html[dir="rtl"] .modal-close{right:auto;left:18px}.modal-head h2{font-size:30px;line-height:1.25;margin:8px 0 26px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.modal label{display:flex;flex-direction:column;gap:7px;font-size:11px;color:#45676B;font-weight:500}.modal input,.modal select,.modal textarea{width:100%;border:1px solid #e2e2eb;background:#fafafe;padding:12px 13px;outline:none;border-radius:2px}.modal input:focus,.modal select:focus,.modal textarea:focus{border-color:#00A99D}.full{margin-top:18px}.submit-btn{margin-top:20px;border:0;color:#fff;background:linear-gradient(90deg,#00A99D,#18C9D4);padding:13px 26px;border-radius:3px;font-weight:600;cursor:pointer}.form-status{font-size:12px;color:#007D78}.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s ease}.reveal.visible{opacity:1;transform:none}
+html[dir="rtl"] .menu{direction:rtl}html[dir="rtl"] .hero-copy,html[dir="rtl"] .about-copy,html[dir="rtl"] .tech-copy,html[dir="rtl"] .product-info{text-align:right}html[dir="rtl"] .tech-copy .number{right:auto;left:0}html[dir="rtl"] .read-more::after,html[dir="rtl"] .arrow-link::after{content:'↖'}
+@media(max-width:1040px){.menu{gap:14px;font-size:12px}.menu .search-btn{display:none}.hero-grid{grid-template-columns:1fr 1fr}.hero-art{transform:scale(.88);transform-origin:center}.tech-row,.tech-row.reverse{gap:45px}.footer-grid{gap:35px}}
+@media(max-width:1020px){.product-cards{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.mini-bar{display:none}.nav-wrap,.nav{height:72px}.mobile-menu{display:block}.menu{position:absolute;top:72px;left:20px;right:20px;background:#fff;border:1px solid var(--line);box-shadow:0 20px 50px rgba(6,75,104,.14);padding:22px;display:none;flex-direction:column;align-items:stretch;gap:10px}.menu.open{display:flex}.menu>a,.menu-drop>button,.lang-btn{text-align:left;padding:7px 0}.start-btn{align-self:flex-start}.drop-panel,.menu-drop:hover .drop-panel{position:static;box-shadow:none;border:0;padding:5px 0 3px 15px;display:none;width:auto}.menu-drop.open .drop-panel{display:flex;flex-direction:column}.hero-grid,.about-grid,.tech-row,.tech-row.reverse{grid-template-columns:1fr}.hero-grid{padding:45px 0 80px}.hero-copy{max-width:650px}.hero-art{height:400px;transform:scale(.8);transform-origin:center top}.about-grid{gap:30px}.about-art{order:2}.tech-row,.tech-row.reverse{gap:20px;margin-bottom:90px}.tech-row.reverse .tech-visual,.tech-row.reverse .tech-copy{order:initial}.tech-visual{height:360px}.products-title,.cta-inner{align-items:flex-start;flex-direction:column}.product-cards{grid-template-columns:1fr 1fr}.industry-grid{grid-template-columns:1fr 1fr}.partner-row{grid-template-columns:repeat(3,1fr);row-gap:30px}.footer-grid{grid-template-columns:1fr 1fr}.form-grid{grid-template-columns:1fr}.modal-card{padding:34px 25px}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,1180px)}.hero h1{font-size:37px}.hero-grid{min-height:610px}.hero-art{height:320px;transform:scale(.64);transform-origin:40% top;width:150%}.section{padding:76px 0}.about-art{height:330px;transform:scale(.78);transform-origin:left top;width:125%}.center-title{margin-bottom:50px}.tech-visual{height:300px;transform:scale(.78);transform-origin:left center;width:125%}.tech-copy .number{font-size:67px}.product-cards{grid-template-columns:1fr}.industry-grid{grid-template-columns:1fr}.partner-row{grid-template-columns:1fr 1fr;font-size:14px}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.slider-controls{bottom:14px}.mini-contact{display:none}}
+
+  
+.product-info p{font-size:13px;color:var(--muted);line-height:1.75;margin:12px 0 18px}
+.product-link{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:600;font-size:12px}
+.product-link::after{content:'↗';color:var(--pink);font-size:14px}
+.prod-schobot{
+  background:
+    radial-gradient(circle at 75% 24%,rgba(24,201,212,.28),transparent 23%),
+    linear-gradient(145deg,#e9f8f6,#d7efee 52%,#bce8e4);
+}
+.schobot-browser{
+  position:absolute;left:12%;right:12%;top:34px;height:175px;background:#fff;
+  border-radius:12px;box-shadow:0 20px 45px rgba(6,75,104,.16);overflow:hidden;
+  border:1px solid rgba(6,75,104,.08)
+}
+.schobot-browser:before{
+  content:'●  ●  ●';display:block;height:27px;padding:3px 11px;color:#9bcac6;
+  background:#f5fbfa;font-size:10px;letter-spacing:4px;border-bottom:1px solid #dfeeed
+}
+.schobot-search{
+  position:absolute;left:10%;right:10%;top:50px;height:32px;border:2px solid #b9dfdc;
+  border-radius:20px;background:#fff
+}
+.schobot-search:before{
+  content:'Academic PDF';position:absolute;left:15px;top:5px;color:#789594;font-size:10px
+}
+.schobot-search:after{
+  content:'⌕';position:absolute;right:12px;top:-1px;color:#00A99D;font-size:22px
+}
+.schobot-lines{position:absolute;left:10%;right:10%;top:98px}
+.schobot-lines i{display:block;height:7px;margin:10px 0;border-radius:6px;background:#dbe9e8}
+.schobot-lines i:nth-child(1){width:78%;background:#93d9d3}
+.schobot-lines i:nth-child(2){width:92%}
+.schobot-lines i:nth-child(3){width:62%;background:#f5d479}
+.schobot-ai-badge{
+  position:absolute;right:7%;bottom:18px;width:72px;height:72px;border-radius:22px;
+  display:grid;place-items:center;background:linear-gradient(145deg,#00A99D,#18C9D4);
+  color:#fff;font-weight:700;font-size:21px;box-shadow:0 14px 28px rgba(0,169,157,.22)
+}
+.prod-baz{
+  background:
+    radial-gradient(circle at 20% 15%,rgba(249,186,24,.23),transparent 24%),
+    linear-gradient(145deg,#f3fbfa,#dff1ee 54%,#caeae7);
+}
+.baz-board{
+  position:absolute;left:12%;right:12%;top:38px;height:154px;border-radius:12px;
+  background:#07384D;box-shadow:0 20px 45px rgba(6,75,104,.18);padding:26px 28px
+}
+.baz-board:before{
+  content:'BAZ';font-size:29px;font-weight:700;letter-spacing:.08em;color:#fff
+}
+.baz-board:after{
+  content:'ACADEMY';position:absolute;left:29px;top:68px;font-size:11px;
+  letter-spacing:.22em;color:#79dcd7
+}
+.baz-course{
+  position:absolute;width:92px;height:68px;background:#fff;border-radius:10px;
+  box-shadow:0 12px 24px rgba(6,75,104,.13)
+}
+.baz-course.c1{right:10%;bottom:17px;transform:rotate(6deg)}
+.baz-course.c2{right:30%;bottom:6px;transform:rotate(-5deg)}
+.baz-course:before{
+  content:'';position:absolute;left:12px;right:12px;top:15px;height:6px;border-radius:8px;
+  background:#18C9D4;box-shadow:0 15px 0 #cfe4e2,0 30px 0 #f9ba18
+}
+.academic-badge{
+  display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding:8px 12px;
+  border-radius:999px;background:#eaf7f5;color:#007D78;font-size:11px;font-weight:600
+}
+
+
+.prod-concept{
+  display:grid;place-items:center;
+  background:
+    radial-gradient(circle at 18% 20%,rgba(24,201,212,.18),transparent 24%),
+    radial-gradient(circle at 82% 78%,rgba(249,186,24,.15),transparent 27%),
+    linear-gradient(145deg,#f6fbfa,#e2f2f0);
+}
+.concept-ui{
+  width:72%;height:64%;border-radius:14px;background:#fff;
+  border:1px solid rgba(6,75,104,.08);
+  box-shadow:0 18px 40px rgba(6,75,104,.12);
+  position:relative;padding:18px;
+}
+.concept-ui:before{
+  content:'';display:block;height:8px;width:48%;border-radius:8px;background:#00A99D;
+  box-shadow:0 22px 0 #d6e8e6,0 44px 0 #e8efee,0 66px 0 #F9BA18;
+}
+.concept-ui:after{
+  content:'';position:absolute;width:54px;height:54px;right:18px;bottom:16px;border-radius:16px;
+  background:linear-gradient(145deg,#064B68,#18C9D4);opacity:.95;
+}
+.concept-badge{
+  position:absolute;left:18px;bottom:16px;padding:7px 10px;border-radius:999px;
+  background:#e8f7f5;color:#007D78;font-size:9px;font-weight:700;letter-spacing:.08em
+}
+.product-status{
+  display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:6px 9px;
+  border-radius:999px;background:#fff7dd;color:#8a6500;border:1px solid #f4e1a0;
+  font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase
+}
+
+
+.products-title{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:30px;
+}
+.products-title > div:first-child{max-width:760px}
+.products-toggle{
+  flex:0 0 auto;
+  min-width:150px;
+  height:50px;
+  padding:0 20px;
+  border:2px solid #00A99D;
+  background:#fff;
+  color:#07384D;
+  border-radius:3px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.25s ease;
+}
+.products-toggle:hover{
+  border-color:#007D78;
+  background:#00A99D;
+  color:#fff;
+  transform:translateY(-2px);
+}
+.product-card.extra-product{display:none}
+.product-cards.show-all .product-card.extra-product{display:block}
+@media(max-width:700px){
+  .products-title{align-items:flex-start;flex-direction:column}
+  .products-toggle{min-width:140px}
+}
+
+
+/* CTA text contrast for light green/white gradient */
+.cta-card h2,
+.cta-card p,
+.cta-card .section-kicker,
+.cta-card .section-eyebrow,
+.cta-section .cta-card h2,
+.cta-section .cta-card p{
+  color:#07384D !important;
+}
+.cta-card .btn-white{
+  background:#00A99D !important;
+  color:#FFFFFF !important;
+  border-color:#00A99D !important;
+}
+
+</style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="header" id="home">
+      <div class="mini-bar">
+        <div class="wrap mini-inner">
+          <div class="mini-brand" data-en="Engineering intelligent digital systems" data-ar="هندسة الأنظمة الرقمية الذكية">Engineering intelligent digital systems</div>
+          <div class="mini-contact">
+            <a href="https://schobot.com" target="_blank" rel="noopener">schobot.com</a>
+            <a href="https://bazacademy.com" target="_blank" rel="noopener">bazacademy.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-wrap">
+        <div class="wrap nav">
+          <a href="#home" class="logo" aria-label="Schobot home">
+            <span class="logo-symbol"><i></i><i></i><i></i></span>
+            <span class="logo-word">schobot</span>
+          </a>
+
+          <button class="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+
+          <nav class="menu">
+            <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+            <div class="menu-drop">
+              <button data-en="Products" data-ar="المنتجات">Products</button>
+              <div class="drop-panel">
+                <a href="https://schobot.com" target="_blank" rel="noopener">Schobot</a>
+                <a href="https://bazacademy.com" target="_blank" rel="noopener">BAZ Academy</a>
+              </div>
+            </div>
+            <a href="#products" data-en="What we build" data-ar="ما الذي نبنيه">What we build</a>
+            <a href="#industries" data-en="For learners" data-ar="للباحثين والمتعلمين">For learners</a>
+            <a href="#about" data-en="About" data-ar="من نحن">About</a>
+            <button class="search-btn" aria-label="Search">⌕</button>
+            <button class="lang-btn" id="langBtn">العربية</button>
+            <button class="start-btn" id="openModal" data-en="Get started" data-ar="ابدأ معنا">Get started</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="slider" id="slider">
+          <article class="slide active" data-slide="0">
+            <div class="wrap hero-grid">
+              <div class="hero-copy">
+                <span class="hero-tag" data-en="ACADEMIC TECHNOLOGY" data-ar="تقنيات أكاديمية">ACADEMIC TECHNOLOGY</span>
+                <h1 data-en="Research smarter. Learn better. Build academic skills." data-ar="ابحث بذكاء أكبر. تعلّم أفضل. وطوّر مهاراتك الأكاديمية.">Research smarter. Learn better. Build academic skills.</h1>
+                <p data-en="Schobot builds academic technology for researchers, students and lifelong learners — from AI-assisted research to structured learning and training." data-ar="تطوّر Schobot تقنيات أكاديمية للباحثين والطلاب والمتعلمين، من البحث المدعوم بالذكاء الاصطناعي إلى التعلم والتدريب المنظّم.">Schobot builds academic technology for researchers, students and lifelong learners — from AI-assisted research to structured learning and training.</p>
+                <a href="#products" class="read-more" data-en="Explore our products" data-ar="استكشف منتجاتنا">Explore our products</a>
+              </div>
+              <div class="hero-art art-ai" aria-hidden="true">
+                <div class="iso-floor"></div>
+                <div class="brain-orb"><div class="brain-lines"></div></div>
+                <div class="server s1"></div><div class="server s2"></div>
+                <div class="screen sc1"><span></span><span></span><span></span></div>
+                <div class="screen sc2"><span></span><span></span></div>
+                <div class="chip"></div>
+                <div class="spark sp1"></div><div class="spark sp2"></div><div class="spark sp3"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide" data-slide="1">
+            <div class="wrap hero-grid">
+              <div class="hero-copy">
+                <span class="hero-tag" data-en="DOCUMENT INTELLIGENCE" data-ar="ذكاء المستندات">DOCUMENT INTELLIGENCE</span>
+                <h1 data-en="Turn scanned documents into searchable knowledge." data-ar="حوّل المستندات الممسوحة إلى معرفة قابلة للبحث.">Turn scanned documents into searchable knowledge.</h1>
+                <p data-en="Extract Arabic and English text, preserve structure and integrate clean data into your workflows." data-ar="استخرج النص العربي والإنجليزي، وحافظ على البنية، واربط البيانات النظيفة بسير عملك.">Extract Arabic and English text, preserve structure and integrate clean data into your workflows.</p>
+                <a href="#ocr" class="read-more" data-en="Read more" data-ar="قراءة المزيد">Read more</a>
+              </div>
+              <div class="hero-art art-ocr" aria-hidden="true">
+                <div class="scanner"></div>
+                <div class="doc d-a"><i></i><i></i><i></i><i></i></div>
+                <div class="doc d-b"><i></i><i></i><i></i></div>
+                <div class="magnifier"></div>
+                <div class="scan-beam"></div>
+                <div class="node-cloud n1"></div><div class="node-cloud n2"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide" data-slide="2">
+            <div class="wrap hero-grid">
+              <div class="hero-copy">
+                <span class="hero-tag" data-en="ARABIC SPEECH AI" data-ar="ذكاء الكلام العربي">ARABIC SPEECH AI</span>
+                <h1 data-en="Convert Arabic audio and video into editable text." data-ar="حوّل الصوت والفيديو العربي إلى نص قابل للتحرير.">Convert Arabic audio and video into editable text.</h1>
+                <p data-en="Build transcription, call analytics, media indexing and conversational applications with speech recognition." data-ar="ابنِ حلول النسخ وتحليل المكالمات وفهرسة الوسائط والتطبيقات الحوارية باستخدام التعرف الصوتي.">Build transcription, call analytics, media indexing and conversational applications with speech recognition.</p>
+                <a href="#speech" class="read-more" data-en="Read more" data-ar="قراءة المزيد">Read more</a>
+              </div>
+              <div class="hero-art art-speech" aria-hidden="true">
+                <div class="audio-deck"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+                <div class="mic-capsule"></div>
+                <div class="speech-card"><i></i><i></i><i></i><i></i></div>
+                <div class="sound-ring r1"></div><div class="sound-ring r2"></div>
+                <div class="mini-server"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide" data-slide="3">
+            <div class="wrap hero-grid">
+              <div class="hero-copy">
+                <span class="hero-tag" data-en="TEXT TO SPEECH" data-ar="تحويل النص إلى صوت">TEXT TO SPEECH</span>
+                <h1 data-en="Give Arabic text a clear, natural voice." data-ar="امنح النص العربي صوتاً واضحاً وطبيعياً.">Give Arabic text a clear, natural voice.</h1>
+                <p data-en="Generate expressive audio for accessibility, education, customer service and media experiences." data-ar="أنشئ صوتاً معبراً لإمكانية الوصول والتعليم وخدمة العملاء وتجارب الوسائط.">Generate expressive audio for accessibility, education, customer service and media experiences.</p>
+                <a href="#speech" class="read-more" data-en="Read more" data-ar="قراءة المزيد">Read more</a>
+              </div>
+              <div class="hero-art art-tts" aria-hidden="true">
+                <div class="speaker"></div>
+                <div class="voice-wave"></div>
+                <div class="text-sheet"><i></i><i></i><i></i><i></i></div>
+                <div class="headphones"></div>
+                <div class="pulse p1"></div><div class="pulse p2"></div>
+              </div>
+            </div>
+          </article>
+
+          <div class="slider-controls">
+            <button id="prevSlide" aria-label="Previous slide">‹</button>
+            <div class="dots" id="dots">
+              <button class="active" data-go="0" aria-label="Slide 1"></button>
+              <button data-go="1" aria-label="Slide 2"></button>
+              <button data-go="2" aria-label="Slide 3"></button>
+              <button data-go="3" aria-label="Slide 4"></button>
+            </div>
+            <button id="nextSlide" aria-label="Next slide">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="wrap about-grid">
+          <div class="about-art reveal" aria-hidden="true">
+            <div class="platform"></div>
+            <div class="core-stack"><div></div><div></div><div></div></div>
+            <div class="analytics-card a1"><i></i><i></i><i></i></div>
+            <div class="analytics-card a2"><i></i><i></i></div>
+            <div class="human h1"></div><div class="human h2"></div>
+            <div class="gear"></div>
+          </div>
+          <div class="about-copy reveal">
+            <span class="section-eyebrow" data-en="WHO WE ARE" data-ar="من نحن">WHO WE ARE</span>
+            <h2 data-en="Technology designed around academic work." data-ar="تقنيات مصممة حول العمل الأكاديمي.">Technology designed around academic work.</h2>
+            <p data-en="Schobot is an academic technology company creating products that help people discover knowledge, work with research materials and develop practical academic skills." data-ar="Schobot شركة تقنية أكاديمية تطوّر منتجات تساعد الناس على اكتشاف المعرفة والعمل مع المواد البحثية وتطوير المهارات الأكاديمية العملية.">Schobot is an academic technology company creating products that help people discover knowledge, work with research materials and develop practical academic skills.</p>
+            <p data-en="Our product ecosystem covers complementary parts of the academic journey, from AI-assisted research to learning, training and knowledge organization." data-ar="تغطي منظومة منتجاتنا جوانب متكاملة من الرحلة الأكاديمية، من البحث المدعوم بالذكاء الاصطناعي إلى التعلم والتدريب وتنظيم المعرفة.">Our product ecosystem covers complementary parts of the academic journey, from AI-assisted research to learning, training and knowledge organization.</p>
+            <a href="#contact" class="arrow-link" data-en="Learn more" data-ar="اعرف المزيد">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech section" id="technologies">
+        <div class="wrap">
+          <div class="center-title reveal">
+            <span class="section-eyebrow" data-en="MAIN TECHNOLOGIES" data-ar="التقنيات الرئيسية">MAIN TECHNOLOGIES</span>
+            <h2 data-en="Explore an AI stack made for Arabic content." data-ar="اكتشف منظومة ذكاء اصطناعي مصممة للمحتوى العربي.">Explore an AI stack made for Arabic content.</h2>
+            <p data-en="Three technology families can be used independently or combined into larger automation workflows." data-ar="يمكن استخدام ثلاث عائلات تقنية بشكل مستقل أو دمجها في مسارات أتمتة أكبر.">Three technology families can be used independently or combined into larger automation workflows.</p>
+          </div>
+
+          <article class="tech-row reveal" id="speech">
+            <div class="tech-visual visual-speech">
+              <div class="tech-pod"></div><div class="tech-laptop"></div><div class="tech-phone"></div>
+              <div class="tech-console"><i></i><i></i><i></i></div><div class="tech-wave"></div>
+            </div>
+            <div class="tech-copy">
+              <span class="number">01</span>
+              <h3 data-en="Speech Technologies" data-ar="تقنيات معالجة الكلام">Speech Technologies</h3>
+              <h4 data-en="Make speech content searchable and actionable." data-ar="حوّل المحتوى الصوتي إلى بيانات قابلة للبحث والتنفيذ.">Make speech content searchable and actionable.</h4>
+              <p data-en="Use fast speech recognition and text-to-speech components for transcription, media workflows, call analytics and voice-driven interfaces." data-ar="استخدم التعرف السريع على الكلام وتحويل النص إلى صوت للنسخ وفهرسة الوسائط وتحليل المكالمات والواجهات الصوتية.">Use fast speech recognition and text-to-speech components for transcription, media workflows, call analytics and voice-driven interfaces.</p>
+              <a href="#products" class="arrow-link" data-en="Read more" data-ar="قراءة المزيد">Read more</a>
+            </div>
+          </article>
+
+          <article class="tech-row reverse reveal" id="ocr">
+            <div class="tech-visual visual-ocr">
+              <div class="glass-cylinder"></div><div class="paper p-a"><i></i><i></i><i></i></div><div class="paper p-b"><i></i><i></i></div>
+              <div class="ocr-machine"></div><div class="search-glass"></div>
+            </div>
+            <div class="tech-copy">
+              <span class="number">02</span>
+              <h3 data-en="Optical Character Recognition" data-ar="التعرف الضوئي على الحروف">Optical Character Recognition</h3>
+              <h4 data-en="Get more value from documents." data-ar="استخرج قيمة أكبر من مستنداتك.">Get more value from documents.</h4>
+              <p data-en="Convert scanned Arabic and English documents into editable, searchable and structured information suitable for downstream business systems." data-ar="حوّل المستندات العربية والإنجليزية الممسوحة إلى معلومات قابلة للتحرير والبحث والتنظيم للاستخدام في أنظمة الأعمال.">Convert scanned Arabic and English documents into editable, searchable and structured information suitable for downstream business systems.</p>
+              <a href="#products" class="arrow-link" data-en="Read more" data-ar="قراءة المزيد">Read more</a>
+            </div>
+          </article>
+
+          <article class="tech-row reveal" id="nlp">
+            <div class="tech-visual visual-nlp">
+              <div class="robot-head"></div><div class="data-bars b1"></div><div class="data-bars b2"></div>
+              <div class="nlp-card c1"></div><div class="nlp-card c2"></div><div class="nlp-chip"></div>
+            </div>
+            <div class="tech-copy">
+              <span class="number">03</span>
+              <h3 data-en="Natural Language Processing" data-ar="معالجة اللغة الطبيعية">Natural Language Processing</h3>
+              <h4 data-en="Understand the meaning inside Arabic text." data-ar="افهم المعنى داخل النص العربي.">Understand the meaning inside Arabic text.</h4>
+              <p data-en="Use text classification, named-entity recognition, diacritization and enrichment tools to build better search, automation and content experiences." data-ar="استخدم تصنيف النص والتعرف على الكيانات والتشكيل وإثراء المحتوى لبناء تجارب بحث وأتمتة أفضل.">Use text classification, named-entity recognition, diacritization and enrichment tools to build better search, automation and content experiences.</p>
+              <a href="#products" class="arrow-link" data-en="Read more" data-ar="قراءة المزيد">Read more</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="products section" id="products">
+        <div class="wrap">
+          <div class="products-title reveal">
+            <div>
+              <span class="section-eyebrow" data-en="OUR PRODUCTS" data-ar="منتجاتنا">OUR PRODUCTS</span>
+              <h2 data-en="A growing product ecosystem for research, learning and academic growth." data-ar="منظومة منتجات متنامية للبحث والتعلّم والتطور الأكاديمي.">A growing product ecosystem for research, learning and academic growth.</h2>
+              <div class="academic-badge" data-en="Schobot academic technology ecosystem" data-ar="منظومة Schobot للتقنيات الأكاديمية">Schobot academic technology ecosystem</div>
+            </div>
+            <button class="products-toggle" id="productsToggle"
+                    data-more-en="More products"
+                    data-less-en="Show less"
+                    data-more-ar="المزيد من المنتجات"
+                    data-less-ar="عرض أقل">
+              More products
+            </button>
+          </div>
+
+          <div class="product-cards">
+            <article class="product-card reveal">
+              <div class="product-image prod-schobot" aria-hidden="true">
+                <div class="schobot-browser">
+                  <div class="schobot-search"></div>
+                  <div class="schobot-lines"><i></i><i></i><i></i></div>
+                </div>
+                <div class="schobot-ai-badge">AI</div>
+              </div>
+              <div class="product-info">
+                <span data-en="AI-POWERED RESEARCH ENGINE" data-ar="محرك بحث أكاديمي بالذكاء الاصطناعي">AI-POWERED RESEARCH ENGINE</span>
+                <h3>Schobot</h3>
+                <p data-en="Search inside academic PDFs, translate research material, convert content into useful formats, and create citations — all in one research workflow."
+                   data-ar="ابحث داخل ملفات PDF الأكاديمية، وترجم المواد البحثية، وحوّل المحتوى إلى صيغ مفيدة، وأنشئ الاستشهادات ضمن سير عمل بحثي واحد.">
+                  Search inside academic PDFs, translate research material, convert content into useful formats, and create citations — all in one research workflow.
+                </p>
+                <a class="product-link" href="https://schobot.com" target="_blank" rel="noopener" data-en="Visit schobot.com" data-ar="زيارة schobot.com">Visit schobot.com</a>
+              </div>
+            </article>
+
+            <article class="product-card reveal">
+              <div class="product-image prod-baz" aria-hidden="true">
+                <div class="baz-board"></div>
+                <div class="baz-course c1"></div>
+                <div class="baz-course c2"></div>
+              </div>
+              <div class="product-info">
+                <span data-en="LEARNING & TRAINING PLATFORM" data-ar="منصة للتعلم والتدريب">LEARNING & TRAINING PLATFORM</span>
+                <h3>BAZ Academy</h3>
+                <p data-en="A learning and training platform for research training, academic courses and kids programs — designed to build knowledge through structured educational experiences."
+                   data-ar="منصة للتعلم والتدريب تقدم التدريب البحثي والدورات الأكاديمية وبرامج الأطفال، وتهدف إلى بناء المعرفة من خلال تجارب تعليمية منظمة.">
+                  A learning and training platform for research training, academic courses and kids programs — designed to build knowledge through structured educational experiences.
+                </p>
+                <a class="product-link" href="https://bazacademy.com" target="_blank" rel="noopener" data-en="Visit bazacademy.com" data-ar="زيارة bazacademy.com">Visit bazacademy.com</a>
+              </div>
+            </article>
+
+            <article class="product-card reveal">
+              <div class="product-image prod-concept" aria-hidden="true">
+                <div class="concept-ui"></div>
+                <div class="concept-badge">CITE</div>
+              </div>
+              <div class="product-info">
+                <span data-en="PRODUCT CONCEPT" data-ar="فكرة منتج">PRODUCT CONCEPT</span>
+                <h3>Schobot Cite</h3>
+                <p data-en="A citation workspace for organizing references, generating bibliography entries and keeping sources connected to research notes."
+                   data-ar="مساحة عمل للاستشهادات لتنظيم المراجع وإنشاء قوائم المصادر وربطها بالملاحظات البحثية.">
+                  A citation workspace for organizing references, generating bibliography entries and keeping sources connected to research notes.
+                </p>
+                <div class="product-status" data-en="Concept / Coming soon" data-ar="فكرة / قريباً">Concept / Coming soon</div>
+              </div>
+            </article>
+
+            <article class="product-card reveal extra-product">
+              <div class="product-image prod-concept" aria-hidden="true">
+                <div class="concept-ui"></div>
+                <div class="concept-badge">TRANS</div>
+              </div>
+              <div class="product-info">
+                <span data-en="PRODUCT CONCEPT" data-ar="فكرة منتج">PRODUCT CONCEPT</span>
+                <h3>Schobot Translate</h3>
+                <p data-en="Academic translation tools designed for papers, abstracts and technical terminology while preserving the structure of research documents."
+                   data-ar="أدوات ترجمة أكاديمية للأبحاث والملخصات والمصطلحات التقنية مع الحفاظ على بنية المستندات البحثية.">
+                  Academic translation tools designed for papers, abstracts and technical terminology while preserving the structure of research documents.
+                </p>
+                <div class="product-status" data-en="Concept / Coming soon" data-ar="فكرة / قريباً">Concept / Coming soon</div>
+              </div>
+            </article>
+
+            <article class="product-card reveal extra-product">
+              <div class="product-image prod-concept" aria-hidden="true">
+                <div class="concept-ui"></div>
+                <div class="concept-badge">NOTES</div>
+              </div>
+              <div class="product-info">
+                <span data-en="PRODUCT CONCEPT" data-ar="فكرة منتج">PRODUCT CONCEPT</span>
+                <h3>Schobot Notes</h3>
+                <p data-en="A research notebook that turns highlights, PDF excerpts and AI answers into structured notes, summaries and study collections."
+                   data-ar="دفتر بحثي يحوّل التحديدات ومقتطفات PDF وإجابات الذكاء الاصطناعي إلى ملاحظات وملخصات ومجموعات دراسية منظمة.">
+                  A research notebook that turns highlights, PDF excerpts and AI answers into structured notes, summaries and study collections.
+                </p>
+                <div class="product-status" data-en="Concept / Coming soon" data-ar="فكرة / قريباً">Concept / Coming soon</div>
+              </div>
+            </article>
+
+            <article class="product-card reveal extra-product">
+              <div class="product-image prod-concept" aria-hidden="true">
+                <div class="concept-ui"></div>
+                <div class="concept-badge">LAB</div>
+              </div>
+              <div class="product-info">
+                <span data-en="PRODUCT CONCEPT" data-ar="فكرة منتج">PRODUCT CONCEPT</span>
+                <h3>BAZ Research Lab</h3>
+                <p data-en="A guided research-training environment with practical exercises for methodology, literature review, academic writing and project design."
+                   data-ar="بيئة تدريب بحثي موجّهة بتمارين عملية للمنهجية ومراجعة الأدبيات والكتابة الأكاديمية وتصميم المشاريع.">
+                  A guided research-training environment with practical exercises for methodology, literature review, academic writing and project design.
+                </p>
+                <div class="product-status" data-en="Concept / Coming soon" data-ar="فكرة / قريباً">Concept / Coming soon</div>
+              </div>
+            </article>
+
+            <article class="product-card reveal extra-product">
+              <div class="product-image prod-concept" aria-hidden="true">
+                <div class="concept-ui"></div>
+                <div class="concept-badge">KIDS</div>
+              </div>
+              <div class="product-info">
+                <span data-en="PRODUCT CONCEPT" data-ar="فكرة منتج">PRODUCT CONCEPT</span>
+                <h3>BAZ Kids Lab</h3>
+                <p data-en="Interactive learning programs for children focused on curiosity, digital skills, science projects and age-appropriate research habits."
+                   data-ar="برامج تعلم تفاعلية للأطفال تركز على الفضول والمهارات الرقمية والمشاريع العلمية وعادات البحث المناسبة للعمر.">
+                  Interactive learning programs for children focused on curiosity, digital skills, science projects and age-appropriate research habits.
+                </p>
+                <div class="product-status" data-en="Concept / Coming soon" data-ar="فكرة / قريباً">Concept / Coming soon</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="industries section" id="industries">
+        <div class="wrap">
+          <div class="center-title reveal">
+            <span class="section-eyebrow" data-en="WHO WE SERVE" data-ar="لمن نصمم">WHO WE SERVE</span>
+            <h2 data-en="Built for the people who research, teach and learn." data-ar="مصمم للباحثين والمعلمين والمتعلمين.">Built for the people who research, teach and learn.</h2>
+          </div>
+          <div class="industry-grid">
+            <article class="industry reveal"><span>⌕</span><h3 data-en="Researchers" data-ar="الباحثون">Researchers</h3></article>
+            <article class="industry reveal"><span>✎</span><h3 data-en="University Students" data-ar="طلاب الجامعات">University Students</h3></article>
+            <article class="industry reveal"><span>◫</span><h3 data-en="Educators" data-ar="المعلمون">Educators</h3></article>
+            <article class="industry reveal"><span>★</span><h3 data-en="Young Learners" data-ar="المتعلمون الصغار">Young Learners</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="wrap partner-row">
+          <span>PDF SEARCH</span><span>TRANSLATION</span><span>CITATIONS</span><span>RESEARCH TRAINING</span><span>COURSES</span><span>KIDS PROGRAMS</span>
+        </div>
+      </section>
+
+      <section class="contact-cta" id="contact">
+        <div class="wrap cta-inner reveal">
+          <div>
+            <span class="section-eyebrow light" data-en="LET'S BUILD" data-ar="لنبدأ البناء">LET'S BUILD</span>
+            <h2 data-en="Explore the Schobot academic ecosystem." data-ar="استكشف منظومة Schobot الأكاديمية.">Explore the Schobot academic ecosystem.</h2>
+            <p data-en="Use Schobot for research workflows or BAZ Academy for learning and training." data-ar="استخدم Schobot لسير العمل البحثي أو BAZ Academy للتعلم والتدريب.">Use Schobot for research workflows or BAZ Academy for learning and training.</p>
+          </div>
+          <button class="white-btn" id="openModal2" data-en="Get started" data-ar="ابدأ معنا">Get started</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-grid">
+        <div class="footer-about">
+          <a href="#home" class="logo footer-logo"><span class="logo-symbol"><i></i><i></i><i></i></span><span class="logo-word">schobot</span></a>
+          <p data-en="Schobot is an academic technology company building products for research, learning and training." data-ar="Schobot شركة تقنية أكاديمية تبني منتجات للبحث والتعلم والتدريب.">Schobot is an academic technology company building products for research, learning and training.</p>
+        </div>
+        <div>
+          <h4 data-en="Products" data-ar="المنتجات">Products</h4>
+          <a href="https://schobot.com" target="_blank" rel="noopener">Schobot</a>
+          <a href="https://bazacademy.com" target="_blank" rel="noopener">BAZ Academy</a>
+        </div>
+        <div>
+          <h4 data-en="Academic Tools" data-ar="الأدوات الأكاديمية">Academic Tools</h4>
+          <a href="https://schobot.com" target="_blank" rel="noopener" data-en="Academic PDF Search" data-ar="البحث داخل PDF الأكاديمي">Academic PDF Search</a>
+          <a href="https://schobot.com" target="_blank" rel="noopener" data-en="Translation & Citation" data-ar="الترجمة والاستشهاد">Translation & Citation</a>
+          <a href="https://bazacademy.com" target="_blank" rel="noopener" data-en="Courses & Training" data-ar="الدورات والتدريب">Courses & Training</a>
+        </div>
+        <div>
+          <h4 data-en="Company" data-ar="الشركة">Company</h4>
+          <a href="#about" data-en="About us" data-ar="من نحن">About us</a>
+          <a href="#products" data-en="Products" data-ar="المنتجات">Products</a>
+          <a href="#contact" data-en="Contact us" data-ar="اتصل بنا">Contact us</a>
+          <a href="#contact" data-en="Careers" data-ar="الوظائف">Careers</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© <span id="year"></span> Schobot. All rights reserved.</span>
+        <span data-en="Original demo inspired by modern AI-company information architecture." data-ar="نموذج أصلي مستوحى من بنية مواقع شركات الذكاء الاصطناعي الحديثة.">Original demo inspired by modern AI-company information architecture.</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal" id="contactModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div class="modal-head">
+        <span class="section-eyebrow" data-en="GET STARTED" data-ar="ابدأ معنا">GET STARTED</span>
+        <h2 data-en="Connect with Schobot" data-ar="تواصل مع Schobot">Connect with Schobot</h2>
+      </div>
+      <form id="leadForm">
+        <div class="form-grid">
+          <label><span data-en="First Name" data-ar="الاسم الأول">First Name</span><input required type="text"></label>
+          <label><span data-en="Last Name" data-ar="الاسم الأخير">Last Name</span><input required type="text"></label>
+          <label><span data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</span><input required type="email"></label>
+          <label><span data-en="Company" data-ar="اسم الشركة">Company</span><input type="text"></label>
+          <label><span data-en="Phone" data-ar="رقم الهاتف">Phone</span><input type="tel"></label>
+          <label><span data-en="Interest" data-ar="مجال الاهتمام">Interest</span><select><option>Speech AI</option><option>OCR</option><option>NLP</option><option>Custom AI solution</option></select></label>
+        </div>
+        <label class="full"><span data-en="How can we help?" data-ar="كيف يمكننا المساعدة؟">How can we help?</span><textarea rows="5"></textarea></label>
+        <button class="submit-btn" type="submit" data-en="Submit" data-ar="إرسال">Submit</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+const root = document.documentElement;
+const langBtn = document.getElementById('langBtn');
+const menu = document.querySelector('.menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+const menuDrop = document.querySelector('.menu-drop');
+const dropBtn = menuDrop.querySelector(':scope > button');
+
+let language = 'en';
+function applyLanguage(next){
+  language = next;
+  const rtl = next === 'ar';
+  root.lang = next;
+  root.dir = rtl ? 'rtl' : 'ltr';
+  document.querySelectorAll('[data-en][data-ar]').forEach(el => el.textContent = el.dataset[next]);
+  langBtn.textContent = rtl ? 'English' : 'العربية';
+  if (typeof updateProductsButton === 'function') updateProductsButton();
+}
+langBtn.addEventListener('click', () => applyLanguage(language === 'en' ? 'ar' : 'en'));
+
+mobileMenu.addEventListener('click', () => {
+  const isOpen = menu.classList.toggle('open');
+  mobileMenu.setAttribute('aria-expanded', String(isOpen));
+});
+dropBtn.addEventListener('click', (e) => {
+  if (window.innerWidth <= 860){ e.preventDefault(); menuDrop.classList.toggle('open'); }
+});
+document.querySelectorAll('.menu a').forEach(a => a.addEventListener('click', () => {
+  menu.classList.remove('open'); mobileMenu.setAttribute('aria-expanded','false');
+}));
+
+const slides = [...document.querySelectorAll('.slide')];
+const dotButtons = [...document.querySelectorAll('.dots button')];
+let current = 0;
+let autoTimer;
+function showSlide(index){
+  current = (index + slides.length) % slides.length;
+  slides.forEach((s,i) => s.classList.toggle('active', i === current));
+  dotButtons.forEach((d,i) => d.classList.toggle('active', i === current));
+  restartAuto();
+}
+function restartAuto(){
+  clearInterval(autoTimer);
+  autoTimer = setInterval(() => showSlide(current + 1), 6500);
+}
+document.getElementById('prevSlide').addEventListener('click', () => showSlide(current - 1));
+document.getElementById('nextSlide').addEventListener('click', () => showSlide(current + 1));
+dotButtons.forEach(d => d.addEventListener('click', () => showSlide(Number(d.dataset.go))));
+restartAuto();
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('visible'); });
+}, {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const modal = document.getElementById('contactModal');
+const openModal = () => { modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; };
+const closeModal = () => { modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); document.body.style.overflow=''; };
+document.getElementById('openModal').addEventListener('click', openModal);
+document.getElementById('openModal2').addEventListener('click', openModal);
+modal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
+document.addEventListener('keydown', e => { if(e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+
+document.getElementById('leadForm').addEventListener('submit', e => {
+  e.preventDefault();
+  document.getElementById('formStatus').textContent = language === 'ar' ? 'تم إرسال النموذج التجريبي. اربطه بنظامك الخلفي لاستخدامه فعلياً.' : 'Demo form submitted. Connect this form to your backend for production use.';
+});
+
+
+const productsToggle = document.getElementById('productsToggle');
+const productGrid = document.querySelector('.product-cards');
+
+function updateProductsButton() {
+  if (!productsToggle || !productGrid) return;
+  const expanded = productGrid.classList.contains('show-all');
+  const isArabic = document.documentElement.lang === 'ar';
+  productsToggle.textContent = expanded
+    ? (isArabic ? productsToggle.dataset.lessAr : productsToggle.dataset.lessEn)
+    : (isArabic ? productsToggle.dataset.moreAr : productsToggle.dataset.moreEn);
+}
+
+updateProductsButton();
+
+if (productsToggle && productGrid) {
+  productsToggle.addEventListener('click', () => {
+    productGrid.classList.toggle('show-all');
+    updateProductsButton();
+
+    // When collapsing, keep the products section comfortably in view.
+    if (!productGrid.classList.contains('show-all')) {
+      document.getElementById('products')?.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  });
+}
+
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+  </script>
+</body>
+</html>
