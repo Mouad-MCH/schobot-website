@@ -3,12 +3,14 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import NextLink from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import LanguageSwitch from "@/components/ui/LanguageSwitch";
 
 export default function Header() {
   const t = useTranslations("Navigation");
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropOpen, setDropOpen] = useState(false);
 
@@ -19,25 +21,29 @@ export default function Header() {
 
   return (
     <>
-      {/* Mini bar – scrolls away */}
+      {/* Mini bar */}
       <div className="nav-mini-bar">
         <div className="wrap nav-mini-inner">
-          <span className="nav-mini-tagline">{t("miniTagline")}</span>
+          <span className="nav-mini-tagline">
+            {t("miniTagline")}
+          </span>
+
           <div className="nav-mini-links">
-            <a
+            <NextLink
               href="https://schobot.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               schobot.com
-            </a>
-            <a
+            </NextLink>
+
+            <NextLink
               href="https://bazacademy.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               bazacademy.com
-            </a>
+            </NextLink>
           </div>
         </div>
       </div>
@@ -45,8 +51,13 @@ export default function Header() {
       {/* Sticky nav */}
       <header className="nav-wrap">
         <div className="wrap nav-inner">
+
           {/* Logo */}
-          <Link href="/" className="nav-logo" aria-label="Schobot home">
+          <Link
+            href="/"
+            className="nav-logo"
+            aria-label="Schobot home"
+          >
             <Image
               src="/images/icons/schobot-mark.svg"
               alt=""
@@ -54,107 +65,163 @@ export default function Header() {
               height={29}
               priority
             />
-            <span className="nav-logo-word">schobot</span>
+
+            <span className="nav-logo-word">
+              schobot
+            </span>
           </Link>
 
           {/* Desktop navigation */}
-          <nav className="nav-desktop" aria-label="Main navigation">
-            <Link href="/" className="nav-link">
+          <nav
+            className="nav-desktop"
+            aria-label="Main navigation"
+          >
+            <Link
+              href="/"
+              className="nav-link"
+            >
               {t("home")}
             </Link>
 
             {/* Products dropdown */}
             <div className="nav-dropdown">
-              <button className="nav-link nav-dropdown-trigger">
+              <button
+                type="button"
+                className="nav-link nav-dropdown-trigger"
+              >
                 {t("products")}
-                <ChevronDown size={12} aria-hidden="true" />
+
+                <ChevronDown
+                  size={12}
+                  aria-hidden="true"
+                />
               </button>
+
               <div className="nav-dropdown-panel">
-                <a
+                <NextLink
                   href="https://schobot.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="nav-dropdown-link"
                 >
                   {t("dropSchobot")}
-                </a>
-                <a
+                </NextLink>
+
+                <NextLink
                   href="https://bazacademy.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="nav-dropdown-link"
                 >
                   {t("dropBazAcademy")}
-                </a>
+                </NextLink>
               </div>
             </div>
 
-            <a href="#products" className="nav-link">
+            <Link
+              href="/#products"
+              className="nav-link"
+            >
               {t("whatWeBuild")}
-            </a>
-            <a href="#industries" className="nav-link">
+            </Link>
+
+            <Link
+              href="/#industries"
+              className="nav-link"
+            >
               {t("forLearners")}
-            </a>
-            <Link href="/about" className="nav-link">
+            </Link>
+
+            <Link
+              href="/about"
+              className="nav-link"
+            >
               {t("about")}
             </Link>
           </nav>
 
-          {/* Desktop right actions */}
+          {/* Desktop actions */}
           <div className="nav-actions">
             <LanguageSwitch />
+
             <button
               type="button"
               className="nav-cta-btn"
-              onClick={() => window.dispatchEvent(new CustomEvent("openContactModal"))}
+              onClick={() =>
+                window.dispatchEvent(
+                  new CustomEvent("openContactModal")
+                )
+              }
             >
               {t("getStarted")}
             </button>
           </div>
 
-          {/* Mobile hamburger */}
+          {/* Mobile toggle */}
           <button
+            type="button"
             className="nav-mobile-toggle"
             aria-expanded={menuOpen}
             aria-controls="nav-mobile-menu"
-            aria-label={menuOpen ? t("closeMenu") : t("openMenu")}
+            aria-label={
+              menuOpen
+                ? t("closeMenu")
+                : t("openMenu")
+            }
             onClick={() => {
-              setMenuOpen((v) => !v);
+              setMenuOpen((value) => !value);
               setDropOpen(false);
             }}
           >
-            {menuOpen ? <X size={20} /> : <Menu size={20} />}
+            {menuOpen ? (
+              <X size={20} />
+            ) : (
+              <Menu size={20} />
+            )}
           </button>
         </div>
 
-        {/* Mobile menu – inside sticky header so it follows on scroll */}
+        {/* Mobile menu */}
         {menuOpen && (
           <nav
             id="nav-mobile-menu"
             className="nav-mobile-menu"
             aria-label="Mobile navigation"
           >
-            <Link href="/" className="nav-mobile-link" onClick={closeAll}>
+            <Link
+              href="/"
+              className="nav-mobile-link"
+              onClick={closeAll}
+            >
               {t("home")}
             </Link>
 
-            {/* Products dropdown (mobile) */}
+            {/* Mobile products dropdown */}
             <div>
               <button
+                type="button"
                 className="nav-mobile-link nav-mobile-drop-trigger"
                 aria-expanded={dropOpen}
-                onClick={() => setDropOpen((v) => !v)}
+                onClick={() =>
+                  setDropOpen((value) => !value)
+                }
               >
                 {t("products")}
+
                 <ChevronDown
                   size={13}
                   aria-hidden="true"
-                  className={dropOpen ? "chevron-open" : ""}
+                  className={
+                    dropOpen
+                      ? "chevron-open"
+                      : ""
+                  }
                 />
               </button>
+
               {dropOpen && (
                 <div className="nav-mobile-drop-panel">
-                  <a
+                  <NextLink
                     href="https://schobot.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -162,8 +229,9 @@ export default function Header() {
                     onClick={closeAll}
                   >
                     {t("dropSchobot")}
-                  </a>
-                  <a
+                  </NextLink>
+
+                  <NextLink
                     href="https://bazacademy.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -171,25 +239,27 @@ export default function Header() {
                     onClick={closeAll}
                   >
                     {t("dropBazAcademy")}
-                  </a>
+                  </NextLink>
                 </div>
               )}
             </div>
 
-            <a
-              href="#products"
+            <Link
+              href="/#products"
               className="nav-mobile-link"
               onClick={closeAll}
             >
               {t("whatWeBuild")}
-            </a>
-            <a
-              href="#industries"
+            </Link>
+
+            <Link
+              href="/#industries"
               className="nav-mobile-link"
               onClick={closeAll}
             >
               {t("forLearners")}
-            </a>
+            </Link>
+
             <Link
               href="/about"
               className="nav-mobile-link"
@@ -200,12 +270,18 @@ export default function Header() {
 
             <div className="nav-mobile-actions">
               <LanguageSwitch />
+
               <button
                 type="button"
                 className="nav-cta-btn"
                 onClick={() => {
                   closeAll();
-                  window.dispatchEvent(new CustomEvent("openContactModal"));
+
+                  window.dispatchEvent(
+                    new CustomEvent(
+                      "openContactModal"
+                    )
+                  );
                 }}
               >
                 {t("getStarted")}
@@ -217,3 +293,4 @@ export default function Header() {
     </>
   );
 }
+

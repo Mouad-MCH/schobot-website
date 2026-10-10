@@ -6,6 +6,9 @@ import { locale } from "next/root-params";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import ContactModal from "@/components/ui/ContactModal";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const cairo = Cairo({ subsets: ["arabic"], variable: "--font-cairo" });
@@ -41,7 +44,10 @@ export default async function LocaleLayout({
     >
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
+          <ContactModal />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

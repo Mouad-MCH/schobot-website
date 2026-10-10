@@ -121,5 +121,76 @@
     "companyContact": "Contact us",
     "companyCareers": "Careers",
     "copyright": "© {year} Schobot. All rights reserved."
+  },
+  "AboutPage": {
+    "hero": {
+      "eyebrow": "ABOUT SCHOBOT",
+      "title": "Technology built around the way researchers work",
+      "description": "Schobot builds intelligent academic tools that help researchers, postgraduate students and academics work with scientific knowledge more efficiently."
+    },
+    "intro": {
+      "eyebrow": "WHO WE ARE",
+      "title": "Making scientific research more accessible, efficient and precise",
+      "description1": "Scientific research often requires researchers to spend countless hours reading documents, searching for relevant information, organizing references and preparing academic material.",
+      "description2": "Schobot was created to simplify this process. We use artificial intelligence to help researchers search inside academic documents, analyze PDFs, extract relevant information, work with scanned material, translate academic content and prepare research drafts more efficiently.",
+      "description3": "Our goal is not to replace the researcher. It is to give researchers better tools so they can spend less time on repetitive work and more time thinking, analyzing and discovering."
+    },
+    "mission": {
+      "eyebrow": "OUR MISSION",
+      "title": "Reduce the effort behind academic research",
+      "description": "Our mission is to remove unnecessary manual work from the research process by building intelligent tools that help academics find, understand and organize scientific information faster."
+    },
+    "vision": {
+      "eyebrow": "OUR VISION",
+      "title": "A smarter research experience for academics everywhere",
+      "description": "We aim to build a trusted AI research environment that supports academics across languages and disciplines while keeping accuracy, traceability and responsible use of technology at the center of the experience."
+    },
+    "principles": {
+      "eyebrow": "WHAT GUIDES US",
+      "title": "Built for serious academic work",
+      "precision": {
+        "title": "Academic precision",
+        "description": "Research results should remain connected to their original sources. Schobot is designed to help researchers trace extracted information back to the documents and pages it came from."
+      },
+      "multilingual": {
+        "title": "Multilingual research",
+        "description": "Academic knowledge should not be limited by language. Schobot supports research workflows across Arabic, English and French."
+      },
+      "efficiency": {
+        "title": "Research efficiency",
+        "description": "We automate repetitive parts of literature review and document analysis so researchers can focus their time on interpretation, critical thinking and discovery."
+      },
+      "privacy": {
+        "title": "Research privacy",
+        "description": "Academic work can contain valuable and sensitive material. Protecting researchers' documents and maintaining confidentiality are fundamental parts of the Schobot experience."
+      }
+    },
+    "technology": {
+      "eyebrow": "WHAT WE BUILD",
+      "title": "AI tools for every stage of working with academic documents",
+      "description": "Schobot combines document processing and artificial intelligence to create practical tools for researchers.",
+      "search": {
+        "title": "Semantic Research Search",
+        "description": "Search inside uploaded academic references and quickly find relevant paragraphs, information and citations."
+      },
+      "ocr": {
+        "title": "Document & OCR Processing",
+        "description": "Turn scanned research material and image-based PDF documents into content that can be searched and edited."
+      },
+      "translation": {
+        "title": "Academic Translation",
+        "description": "Translate scientific and academic material while preserving the meaning and terminology of the original content."
+      },
+      "assistant": {
+        "title": "AI Research Assistance",
+        "description": "Use AI to organize information, analyze references and support the preparation of structured academic material."
+      }
+    },
+    "closing": {
+      "eyebrow": "THE FUTURE OF RESEARCH",
+      "title": "Helping researchers spend more time discovering",
+      "description": "We believe technology should make research easier to navigate without taking control away from the researcher. Schobot continues to develop tools that make academic knowledge easier to search, understand and use.",
+      "button": "Explore Schobot"
+    }
   }
 }

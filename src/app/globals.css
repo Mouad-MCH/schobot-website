@@ -2749,3 +2749,12 @@ a {
   text-align: center;
 }
 
+
+/* ─────────────────────────────────────────
+   About page 
+───────────────────────────────────────── */  
+
+.about_header {
+  background: linear-gradient(110deg, #59e7a6 0%, #9af0c7 30%, #ddf9ec 65%, #ffffff 100%);
+  padding: 72px 0;
+}

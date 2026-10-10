@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="80" x2="920" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FFFC"/>
+      <stop offset="0.55" stop-color="#EAFBF5"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#59E7A6"/>
+      <stop offset="1" stop-color="#00A99D"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#18C9D4"/>
+      <stop offset="1" stop-color="#00A99D"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#07384D" flood-opacity=".14"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="700" rx="40" fill="url(#bg)"/>
+
+  <!-- soft background shapes -->
+  <circle cx="135" cy="115" r="95" fill="#59E7A6" opacity=".12"/>
+  <circle cx="855" cy="115" r="115" fill="#18C9D4" opacity=".10"/>
+  <circle cx="860" cy="585" r="155" fill="#00A99D" opacity=".06"/>
+
+  <!-- target -->
+  <g filter="url(#shadow)">
+    <circle cx="500" cy="340" r="178" fill="#FFFFFF"/>
+    <circle cx="500" cy="340" r="142" fill="#EAF7F5"/>
+    <circle cx="500" cy="340" r="106" fill="#BFEFE1"/>
+    <circle cx="500" cy="340" r="72" fill="#59E7A6"/>
+    <circle cx="500" cy="340" r="38" fill="#00A99D"/>
+    <circle cx="500" cy="340" r="14" fill="#07384D"/>
+  </g>
+
+  <!-- arrow -->
+  <g filter="url(#shadow)">
+    <path d="M694 170L538 314" stroke="#07384D" stroke-width="18" stroke-linecap="round"/>
+    <path d="M681 147l68 10-22 66-13-36-33-40z" fill="#18C9D4"/>
+    <path d="M681 147l33 40 13 36-28-10-18-66z" fill="#00A99D"/>
+  </g>
+
+  <!-- lightbulb / idea -->
+  <g filter="url(#shadow)">
+    <circle cx="220" cy="235" r="78" fill="#FFFFFF"/>
+    <path d="M220 184c-31 0-56 24-56 54 0 22 12 39 29 49 8 5 12 12 12 21h30c0-9 4-16 12-21 18-10 29-27 29-49 0-30-25-54-56-54z"
+          fill="#F9BA18"/>
+    <rect x="202" y="310" width="36" height="12" rx="6" fill="#07384D"/>
+    <rect x="207" y="327" width="26" height="10" rx="5" fill="#07384D"/>
+    <path d="M220 139v-24M162 163l-18-18M278 163l18-18M139 220h-25M326 220h-25"
+          stroke="#00A99D" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- vision telescope -->
+  <g filter="url(#shadow)">
+    <rect x="708" y="365" width="165" height="70" rx="30" fill="#07384D" transform="rotate(-14 708 365)"/>
+    <rect x="786" y="344" width="94" height="73" rx="28" fill="url(#cyan)" transform="rotate(-14 786 344)"/>
+    <circle cx="857" cy="363" r="31" fill="#DDF9EC" stroke="#00A99D" stroke-width="8"/>
+    <path d="M738 427l-45 131M772 418l10 140" stroke="#07384D" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <!-- roadmap -->
+  <g filter="url(#shadow)">
+    <rect x="95" y="445" width="300" height="155" rx="28" fill="#FFFFFF"/>
+    <path d="M138 548C184 491 244 513 278 478c25-26 47-17 76-8"
+          stroke="#00A99D" stroke-width="10" stroke-linecap="round" stroke-dasharray="14 16"/>
+    <circle cx="138" cy="548" r="16" fill="#07384D"/>
+    <circle cx="278" cy="478" r="16" fill="#18C9D4"/>
+    <circle cx="354" cy="470" r="16" fill="#59E7A6"/>
+    <rect x="126" y="574" width="92" height="8" rx="4" fill="#DCE9E7"/>
+    <rect x="238" y="574" width="118" height="8" rx="4" fill="#DCE9E7"/>
+  </g>
+
+  <!-- mission card -->
+  <g filter="url(#shadow)">
+    <rect x="620" y="505" width="280" height="120" rx="26" fill="#FFFFFF"/>
+    <circle cx="665" cy="565" r="24" fill="#EAF7F5"/>
+    <path d="M654 566l8 8 16-20" stroke="#00A99D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="705" y="542" width="138" height="10" rx="5" fill="#07384D" opacity=".75"/>
+    <rect x="705" y="565" width="108" height="8" rx="4" fill="#BFD6D3"/>
+    <rect x="705" y="585" width="126" height="8" rx="4" fill="#DCE9E7"/>
+  </g>
+
+  <!-- subtle connecting dots -->
+  <path d="M316 250C365 210 410 190 456 183" stroke="#18C9D4" stroke-width="4" stroke-dasharray="8 12" stroke-linecap="round"/>
+  <path d="M665 433C700 462 727 483 751 504" stroke="#59E7A6" stroke-width="4" stroke-dasharray="8 12" stroke-linecap="round"/>
+</svg>
