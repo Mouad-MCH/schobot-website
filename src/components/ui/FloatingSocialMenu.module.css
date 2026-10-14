@@ -1,0 +1,13 @@
+.wrapper {
+  position: fixed;
+  bottom: 1.5rem;
+  inset-inline-end: 1.5rem;
+  z-index: 200;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    bottom: 2rem;
+    inset-inline-end: 2rem;
+  }
+}

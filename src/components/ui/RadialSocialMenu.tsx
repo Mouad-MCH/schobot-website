@@ -17,9 +17,10 @@ interface Props {
   items: SocialItem[];
   radius?: number;
   size?: number;
+  dir?: "ltr" | "rtl";
 }
 
-export default function RadialSocialMenu({ items, radius = 85, size = 48 }: Props) {
+export default function RadialSocialMenu({ items, radius = 85, size = 48, dir = "ltr" }: Props) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -28,7 +29,8 @@ export default function RadialSocialMenu({ items, radius = 85, size = 48 }: Prop
       style={{ "--rsm-size": `${size}px` } as CSSProperties}
     >
       {items.map((item, i) => {
-        const angle = ((Math.PI * 1) / items.length) * i - Math.PI * -4/5;
+        const ltrAngle = ((Math.PI * 1) / items.length) * i - Math.PI * -4/5;
+        const angle = dir === "rtl" ? Math.PI - ltrAngle : ltrAngle;
         const x = open ? +(radius * Math.cos(angle)).toFixed(2) : 0;
         const y = open ? +(radius * Math.sin(angle)).toFixed(2) : 0;
 

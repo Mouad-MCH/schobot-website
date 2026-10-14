@@ -48,7 +48,7 @@ export default async function LocaleLayout({
           <Header />
           {children}
           <ContactModal />
-          <FloatingSocialMenu />
+          <FloatingSocialMenu dir={loc === "ar" ? "rtl" : "ltr"} />
           <Footer />
         </NextIntlClientProvider>
       </body>
