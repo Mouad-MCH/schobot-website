@@ -16,7 +16,7 @@ export default function FloatingSocialMenu() {
       style={{
         position: "fixed",
         bottom: "3rem",
-        right: "3rem",
+        right: "6rem",
         zIndex: 200,
       }}
     >
