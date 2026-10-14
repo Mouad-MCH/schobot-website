@@ -10,7 +10,7 @@ import CTA from "@/components/home/CTA";
 export default function HomePage() {
   return (
     <>
-      <main>
+      <main className="overflow-hidden">
         <Hero />
         <About />
         <Technologies />
