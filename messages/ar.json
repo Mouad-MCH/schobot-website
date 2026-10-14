@@ -120,7 +120,8 @@
     "companyProducts": "المنتجات",
     "companyContact": "اتصل بنا",
     "companyCareers": "الوظائف",
-    "copyright": "© {year} Schobot. جميع الحقوق محفوظة."
+    "copyright": "© {year} Schobot. جميع الحقوق محفوظة.",
+    "contactHeading": "تواصل معنا"
   },
   "AboutPage": {
     "hero": {

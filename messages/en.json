@@ -120,7 +120,8 @@
     "companyProducts": "Products",
     "companyContact": "Contact us",
     "companyCareers": "Careers",
-    "copyright": "© {year} Schobot. All rights reserved."
+    "copyright": "© {year} Schobot. All rights reserved.",
+    "contactHeading": "Connect with us"
   },
   "AboutPage": {
     "hero": {

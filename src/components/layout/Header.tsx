@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import NextLink from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -10,6 +10,7 @@ import LanguageSwitch from "@/components/ui/LanguageSwitch";
 
 export default function Header() {
   const t = useTranslations("Navigation");
+  const locale = useLocale();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropOpen, setDropOpen] = useState(false);
@@ -59,16 +60,12 @@ export default function Header() {
             aria-label="Schobot home"
           >
             <Image
-              src="/images/icons/schobot-mark.svg"
+              src={locale === "ar" ? "/images/logo/schobot-logo-ar.png" : "/images/logo/schobot-logo-en.png"}
               alt=""
-              width={38}
-              height={29}
+              width={150}
+              height={59}
               priority
             />
-
-            <span className="nav-logo-word">
-              schobot
-            </span>
           </Link>
 
           {/* Desktop navigation */}

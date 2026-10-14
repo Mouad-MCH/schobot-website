@@ -249,6 +249,27 @@ a {
   color: var(--green);
 }
 
+/* Language select */
+.nav-lang-select {
+  padding: 6px 4px;
+  background: transparent;
+  border: none;
+  color: #335a60;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: color 0.18s;
+  white-space: nowrap;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+.nav-lang-select:hover,
+.nav-lang-select:focus {
+  color: var(--green);
+}
+
 /* CTA button */
 .nav-cta-btn {
   display: inline-flex;

@@ -9,6 +9,7 @@ import "../globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ContactModal from "@/components/ui/ContactModal";
+import FloatingSocialMenu from "@/components/ui/FloatingSocialMenu";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const cairo = Cairo({ subsets: ["arabic"], variable: "--font-cairo" });
@@ -47,6 +48,7 @@ export default async function LocaleLayout({
           <Header />
           {children}
           <ContactModal />
+          <FloatingSocialMenu />
           <Footer />
         </NextIntlClientProvider>
       </body>

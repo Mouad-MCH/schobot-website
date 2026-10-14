@@ -1,0 +1,197 @@
+{
+  "Navigation": {
+    "home": "Accueil",
+    "products": "Produits",
+    "whatWeBuild": "Ce que nous construisons",
+    "forLearners": "Pour les apprenants",
+    "about": "À propos",
+    "contact": "Contact",
+    "getStarted": "Commencer",
+    "dropSchobot": "Schobot",
+    "dropBazAcademy": "BAZ Academy",
+    "miniTagline": "Ingénierie de systèmes numériques intelligents",
+    "openMenu": "Ouvrir la navigation",
+    "closeMenu": "Fermer la navigation"
+  },
+  "Hero": {
+    "s1eyebrow": "TECHNOLOGIE ACADÉMIQUE",
+    "s1heading": "Recherchez plus intelligemment. Apprenez mieux. Développez vos compétences académiques.",
+    "s1body": "Schobot développe des technologies académiques pour les chercheurs, les étudiants et les apprenants — de la recherche assistée par IA à l'apprentissage structuré et à la formation.",
+    "s1cta": "Découvrir nos produits",
+    "s2eyebrow": "INTELLIGENCE DOCUMENTAIRE",
+    "s2heading": "Transformez des documents numérisés en connaissances consultables.",
+    "s2body": "Extrayez du texte en arabe et en anglais, préservez la structure et intégrez des données propres dans vos flux de travail.",
+    "s2cta": "En savoir plus",
+    "s3eyebrow": "IA VOCALE ARABE",
+    "s3heading": "Convertissez l'audio et la vidéo arabes en texte modifiable.",
+    "s3body": "Développez des solutions de transcription, d'analyse d'appels, d'indexation de médias et d'applications conversationnelles grâce à la reconnaissance vocale.",
+    "s3cta": "En savoir plus",
+    "s4eyebrow": "SYNTHÈSE VOCALE",
+    "s4heading": "Donnez au texte arabe une voix claire et naturelle.",
+    "s4body": "Générez de l'audio expressif pour l'accessibilité, l'éducation, le service client et les expériences médias.",
+    "s4cta": "En savoir plus",
+    "prevSlide": "Diapositive précédente",
+    "nextSlide": "Diapositive suivante",
+    "goToSlide": "Aller à la diapositive {n}"
+  },
+  "About": {
+    "eyebrow": "QUI SOMMES-NOUS",
+    "heading": "Une technologie conçue autour du travail académique.",
+    "body1": "Schobot est une entreprise de technologie académique qui crée des produits pour aider les personnes à découvrir des connaissances, à travailler avec des matériaux de recherche et à développer des compétences académiques pratiques.",
+    "body2": "Notre écosystème de produits couvre des aspects complémentaires du parcours académique, de la recherche assistée par IA à l'apprentissage, la formation et l'organisation des connaissances.",
+    "learnMore": "En savoir plus"
+  },
+  "Technologies": {
+    "eyebrow": "TECHNOLOGIES PRINCIPALES",
+    "heading": "Explorez une stack IA conçue pour le contenu arabe.",
+    "body": "Trois familles de technologies peuvent être utilisées indépendamment ou combinées dans des flux d'automatisation plus larges.",
+    "t1heading": "Technologies vocales",
+    "t1subheading": "Rendez le contenu vocal consultable et exploitable.",
+    "t1body": "Utilisez la reconnaissance vocale rapide et les composants de synthèse vocale pour la transcription, les flux médias, l'analyse d'appels et les interfaces vocales.",
+    "t1cta": "En savoir plus",
+    "t2heading": "Reconnaissance optique de caractères",
+    "t2subheading": "Tirez plus de valeur de vos documents.",
+    "t2body": "Convertissez des documents arabes et anglais numérisés en informations modifiables, consultables et structurées adaptées aux systèmes d'entreprise.",
+    "t2cta": "En savoir plus",
+    "t3heading": "Traitement du langage naturel",
+    "t3subheading": "Comprenez le sens du texte arabe.",
+    "t3body": "Utilisez la classification de texte, la reconnaissance d'entités nommées, la diacritisation et les outils d'enrichissement pour créer de meilleures expériences de recherche et d'automatisation.",
+    "t3cta": "En savoir plus"
+  },
+  "Products": {
+    "eyebrow": "NOS PRODUITS",
+    "heading": "Un écosystème de produits en pleine croissance pour la recherche, l'apprentissage et la progression académique.",
+    "badge": "Écosystème de technologie académique Schobot",
+    "more": "Plus de produits",
+    "less": "Afficher moins",
+    "visitWebsite": "Visiter le site",
+    "comingSoon": "Prochainement",
+    "concept": "Concept / Prochainement"
+  },
+  "Audience": {
+    "eyebrow": "QUI NOUS SERVONS",
+    "heading": "Conçu pour ceux qui recherchent, enseignent et apprennent.",
+    "researchers": "Chercheurs",
+    "students": "Étudiants universitaires",
+    "educators": "Enseignants",
+    "youngLearners": "Jeunes apprenants"
+  },
+  "Partners": {
+    "cap1": "RECHERCHE PDF",
+    "cap2": "TRADUCTION",
+    "cap3": "CITATIONS",
+    "cap4": "FORMATION À LA RECHERCHE",
+    "cap5": "COURS",
+    "cap6": "PROGRAMMES POUR ENFANTS"
+  },
+  "CTA": {
+    "eyebrow": "CONSTRUISONS ENSEMBLE",
+    "heading": "Explorez l'écosystème académique Schobot.",
+    "body": "Utilisez Schobot pour les flux de recherche ou BAZ Academy pour l'apprentissage et la formation.",
+    "cta": "Commencer"
+  },
+  "Modal": {
+    "eyebrow": "COMMENCER",
+    "heading": "Contactez Schobot",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Adresse e-mail",
+    "company": "Entreprise",
+    "phone": "Téléphone",
+    "interest": "Centre d'intérêt",
+    "interestSpeech": "IA vocale",
+    "interestOCR": "OCR",
+    "interestNLP": "NLP",
+    "interestCustom": "Solution IA personnalisée",
+    "message": "Comment pouvons-nous vous aider ?",
+    "submit": "Envoyer",
+    "success": "Message reçu. Nous vous contacterons bientôt.",
+    "close": "Fermer"
+  },
+  "Footer": {
+    "tagline": "Schobot est une entreprise de technologie académique qui développe des produits pour la recherche, l'apprentissage et la formation.",
+    "productsHeading": "Produits",
+    "toolsHeading": "Outils académiques",
+    "companyHeading": "Entreprise",
+    "toolAcademicSearch": "Recherche PDF académique",
+    "toolTranslation": "Traduction et citation",
+    "toolCourses": "Cours et formation",
+    "companyAbout": "À propos de nous",
+    "companyProducts": "Produits",
+    "companyContact": "Nous contacter",
+    "companyCareers": "Carrières",
+    "copyright": "© {year} Schobot. Tous droits réservés.",
+    "contactHeading": "Contactez-nous"
+  },
+  "AboutPage": {
+    "hero": {
+      "eyebrow": "À PROPOS DE SCHOBOT",
+      "title": "Une technologie conçue autour de la façon dont les chercheurs travaillent",
+      "description": "Schobot développe des outils académiques intelligents qui aident les chercheurs, les étudiants en master et doctorat ainsi que les universitaires à travailler avec les connaissances scientifiques plus efficacement."
+    },
+    "intro": {
+      "eyebrow": "QUI SOMMES-NOUS",
+      "title": "Rendre la recherche scientifique plus accessible, efficace et précise",
+      "description1": "La recherche scientifique exige souvent que les chercheurs passent d'innombrables heures à lire des documents, à chercher des informations pertinentes, à organiser des références et à préparer des contenus académiques.",
+      "description2": "Schobot a été créé pour simplifier ce processus. Nous utilisons l'intelligence artificielle pour aider les chercheurs à effectuer des recherches dans des documents académiques, analyser des PDF, extraire des informations pertinentes, travailler avec des documents numérisés, traduire du contenu académique et préparer des brouillons de recherche plus efficacement.",
+      "description3": "Notre objectif n'est pas de remplacer le chercheur, mais de lui fournir de meilleurs outils afin qu'il passe moins de temps sur les tâches répétitives et plus de temps à réfléchir, analyser et découvrir."
+    },
+    "mission": {
+      "eyebrow": "NOTRE MISSION",
+      "title": "Réduire l'effort derrière la recherche académique",
+      "description": "Notre mission est d'éliminer le travail manuel inutile du processus de recherche en développant des outils intelligents qui aident les universitaires à trouver, comprendre et organiser les informations scientifiques plus rapidement."
+    },
+    "vision": {
+      "eyebrow": "NOTRE VISION",
+      "title": "Une expérience de recherche plus intelligente pour les universitaires du monde entier",
+      "description": "Nous visons à construire un environnement de recherche IA fiable qui soutient les universitaires dans toutes les langues et disciplines, tout en plaçant la précision, la traçabilité et l'utilisation responsable de la technologie au cœur de l'expérience."
+    },
+    "principles": {
+      "eyebrow": "CE QUI NOUS GUIDE",
+      "title": "Conçu pour un travail académique sérieux",
+      "precision": {
+        "title": "Précision académique",
+        "description": "Les résultats de recherche doivent rester liés à leurs sources originales. Schobot est conçu pour aider les chercheurs à tracer les informations extraites jusqu'aux documents et pages d'où elles proviennent."
+      },
+      "multilingual": {
+        "title": "Recherche multilingue",
+        "description": "La connaissance académique ne doit pas être limitée par la langue. Schobot prend en charge les flux de recherche en arabe, en anglais et en français."
+      },
+      "efficiency": {
+        "title": "Efficacité de la recherche",
+        "description": "Nous automatisons les parties répétitives de la revue de littérature et de l'analyse documentaire afin que les chercheurs puissent consacrer leur temps à l'interprétation, la pensée critique et la découverte."
+      },
+      "privacy": {
+        "title": "Confidentialité de la recherche",
+        "description": "Le travail académique peut contenir des matériaux précieux et sensibles. La protection des documents des chercheurs et le maintien de la confidentialité sont des éléments fondamentaux de l'expérience Schobot."
+      }
+    },
+    "technology": {
+      "eyebrow": "CE QUE NOUS CONSTRUISONS",
+      "title": "Des outils IA pour chaque étape du travail avec les documents académiques",
+      "description": "Schobot combine le traitement de documents et l'intelligence artificielle pour créer des outils pratiques à destination des chercheurs.",
+      "search": {
+        "title": "Recherche sémantique académique",
+        "description": "Recherchez dans les références académiques téléchargées et trouvez rapidement les paragraphes, informations et citations pertinents."
+      },
+      "ocr": {
+        "title": "Traitement documentaire et OCR",
+        "description": "Transformez des documents de recherche numérisés et des PDF sous forme d'images en contenu consultable et modifiable."
+      },
+      "translation": {
+        "title": "Traduction académique",
+        "description": "Traduisez des matériaux scientifiques et académiques tout en préservant le sens et la terminologie du contenu original."
+      },
+      "assistant": {
+        "title": "Assistance à la recherche par IA",
+        "description": "Utilisez l'IA pour organiser les informations, analyser les références et soutenir la préparation de matériaux académiques structurés."
+      }
+    },
+    "closing": {
+      "eyebrow": "L'AVENIR DE LA RECHERCHE",
+      "title": "Aider les chercheurs à passer plus de temps à découvrir",
+      "description": "Nous pensons que la technologie doit faciliter la navigation dans la recherche sans en prendre le contrôle. Schobot continue de développer des outils qui rendent les connaissances académiques plus faciles à rechercher, comprendre et utiliser.",
+      "button": "Explorer Schobot"
+    }
+  }
+}

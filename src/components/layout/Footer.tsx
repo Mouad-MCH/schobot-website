@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
+import RadialSocialMenu from "@/components/ui/RadialSocialMenu";
+
 
 export default async function Footer() {
   const t = await getTranslations("Footer");
@@ -31,14 +33,14 @@ export default async function Footer() {
             <h4 className="footer-col-heading">{t("productsHeading")}</h4>
             <ul className="footer-links">
               <li>
-                <a href="https://schobot.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+                <Link href="https://schobot.com" target="_blank" rel="noopener noreferrer" className="footer-link">
                   Schobot
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://bazacademy.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+                <Link href="https://bazacademy.com" target="_blank" rel="noopener noreferrer" className="footer-link">
                   BAZ Academy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -48,19 +50,19 @@ export default async function Footer() {
             <h4 className="footer-col-heading">{t("toolsHeading")}</h4>
             <ul className="footer-links">
               <li>
-                <a href="https://schobot.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+                <Link href="https://schobot.com" target="_blank" rel="noopener noreferrer" className="footer-link">
                   {t("toolAcademicSearch")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://schobot.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+                <Link href="https://schobot.com" target="_blank" rel="noopener noreferrer" className="footer-link">
                   {t("toolTranslation")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://bazacademy.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+                <Link href="https://bazacademy.com" target="_blank" rel="noopener noreferrer" className="footer-link">
                   {t("toolCourses")}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -76,10 +78,10 @@ export default async function Footer() {
                 <Link href="/" className="footer-link">{t("companyProducts")}</Link>
               </li>
               <li>
-                <a href="#contact" className="footer-link">{t("companyContact")}</a>
+                <Link href="#contact" className="footer-link">{t("companyContact")}</Link>
               </li>
               <li>
-                <a href="#contact" className="footer-link">{t("companyCareers")}</a>
+                <Link href="#contact" className="footer-link">{t("companyCareers")}</Link>
               </li>
             </ul>
           </div>
