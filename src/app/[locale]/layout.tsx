@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Cairo } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { locale } from "next/root-params";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -14,11 +14,11 @@ import FloatingSocialMenu from "@/components/ui/FloatingSocialMenu";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const cairo = Cairo({ subsets: ["arabic"], variable: "--font-cairo" });
 
-export const metadata: Metadata = {
-  title: "Schobot — Academic Technology for Research & Learning",
-  description:
-    "Schobot builds academic technology for research, learning and training.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const loc = await locale();
+  const t = await getTranslations({ locale: loc, namespace: "Meta" });
+  return { title: t("title"), description: t("description") };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((loc) => ({ locale: loc }));

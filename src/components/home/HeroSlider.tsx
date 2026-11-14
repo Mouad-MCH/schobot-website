@@ -119,7 +119,7 @@ export default function HeroSlider() {
       heading: t("s3heading"),
       body: t("s3body"),
       cta: t("s3cta"),
-      ctaHref: "#speech",
+      ctaHref: "https://forms.gle/q4v3qXj7vcNoKBzu6",
       artClass: "art-speech",
       artContent: <ArtSpeech />,
     },
@@ -129,7 +129,7 @@ export default function HeroSlider() {
       heading: t("s4heading"),
       body: t("s4body"),
       cta: t("s4cta"),
-      ctaHref: "#speech",
+      ctaHref: "/about",
       artClass: "art-tts",
       artContent: <ArtTTS />,
     },
@@ -183,13 +183,26 @@ export default function HeroSlider() {
                   {slide.body}
                 </p>
                 <div className="hero-actions">
-                  <a
-                    href={slide.ctaHref}
-                    className="btn-primary hero-btn-primary"
-                  >
-                    {slide.cta}
-                    <span className="rtl-flip" aria-hidden="true">↗</span>
-                  </a>
+                  {slide.ctaHref.startsWith("/") ? (
+                    <Link
+                      href={slide.ctaHref}
+                      className="btn-primary hero-btn-primary"
+                    >
+                      {slide.cta}
+                      <span className="rtl-flip" aria-hidden="true">↗</span>
+                    </Link>
+                  ) : (
+                    <a
+                      href={slide.ctaHref}
+                      className="btn-primary hero-btn-primary"
+                      {...(slide.ctaHref.startsWith("http")
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
+                    >
+                      {slide.cta}
+                      <span className="rtl-flip" aria-hidden="true">↗</span>
+                    </a>
+                  )}
                   <Link href="/products" className="hero-read-more">
                     <ArrowRight size={14} className="rtl-flip" />
                   </Link>

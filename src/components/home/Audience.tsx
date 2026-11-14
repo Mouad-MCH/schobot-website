@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 const ICONS = ["⌕", "✎", "◫", "★"] as const;
-const KEYS = ["researchers", "students", "educators", "youngLearners"] as const;
+const KEYS = ["researchers", "universities", "parents", "partners"] as const;
 
 export default async function Audience() {
   const t = await getTranslations("Audience");

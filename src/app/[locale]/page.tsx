@@ -4,6 +4,8 @@ import Technologies from "@/components/home/Technologies";
 import Products from "@/components/home/Products";
 import Audience from "@/components/home/Audience";
 import Partners from "@/components/home/Partners";
+import Stats from "@/components/home/Stats";
+import ContactChannels from "@/components/home/ContactChannels";
 import CTA from "@/components/home/CTA";
 
 
@@ -17,6 +19,8 @@ export default function HomePage() {
         <Products />
         <Audience />
         <Partners />
+        <Stats />
+        <ContactChannels />
         <CTA />
       </main>
     </>

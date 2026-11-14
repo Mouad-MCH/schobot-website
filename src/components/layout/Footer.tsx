@@ -1,7 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import RadialSocialMenu from "@/components/ui/RadialSocialMenu";
 
 
 export default async function Footer() {
@@ -75,13 +74,10 @@ export default async function Footer() {
                 <Link href="/about" className="footer-link">{t("companyAbout")}</Link>
               </li>
               <li>
-                <Link href="/" className="footer-link">{t("companyProducts")}</Link>
+                <Link href="/#products" className="footer-link">{t("companyProducts")}</Link>
               </li>
               <li>
-                <Link href="#contact" className="footer-link">{t("companyContact")}</Link>
-              </li>
-              <li>
-                <Link href="#contact" className="footer-link">{t("companyCareers")}</Link>
+                <Link href="/#channels" className="footer-link">{t("companyContact")}</Link>
               </li>
             </ul>
           </div>

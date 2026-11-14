@@ -2,66 +2,66 @@
   "Navigation": {
     "home": "Home",
     "products": "Products",
-    "whatWeBuild": "What we build",
-    "forLearners": "For learners",
+    "whatWeBuild": "What we offer",
+    "forLearners": "Who we serve",
     "about": "About",
     "contact": "Contact",
-    "getStarted": "Get started",
+    "getStarted": "Contact us",
     "dropSchobot": "Schobot",
     "dropBazAcademy": "BAZ Academy",
-    "miniTagline": "Engineering intelligent digital systems",
+    "miniTagline": "An integrated ecosystem for knowledge, education, consulting and technology",
     "openMenu": "Open navigation",
     "closeMenu": "Close navigation"
   },
   "Hero": {
-    "s1eyebrow": "ACADEMIC TECHNOLOGY",
-    "s1heading": "Research smarter. Learn better. Build academic skills.",
-    "s1body": "Schobot builds academic technology for researchers, students and lifelong learners — from AI-assisted research to structured learning and training.",
-    "s1cta": "Explore our products",
-    "s2eyebrow": "DOCUMENT INTELLIGENCE",
-    "s2heading": "Turn scanned documents into searchable knowledge.",
-    "s2body": "Extract Arabic and English text, preserve structure and integrate clean data into your workflows.",
-    "s2cta": "Read more",
-    "s3eyebrow": "ARABIC SPEECH AI",
-    "s3heading": "Convert Arabic audio and video into editable text.",
-    "s3body": "Build transcription, call analytics, media indexing and conversational applications with speech recognition.",
-    "s3cta": "Read more",
-    "s4eyebrow": "TEXT TO SPEECH",
-    "s4heading": "Give Arabic text a clear, natural voice.",
-    "s4body": "Generate expressive audio for accessibility, education, customer service and media experiences.",
-    "s4cta": "Read more",
+    "s1eyebrow": "SCHOBOT ECOSYSTEM",
+    "s1heading": "We turn knowledge into impact: faster research, deeper training and ethical AI.",
+    "s1body": "Integrated solutions for scientific research, education, training and digital empowerment.",
+    "s1cta": "Explore our products and solutions",
+    "s2eyebrow": "OCR SERVICE",
+    "s2heading": "Double the value of your documents.",
+    "s2body": "Convert scanned images of Arabic and English documents into fully editable, searchable text files using the precise RDI engine.",
+    "s2cta": "Learn more",
+    "s3eyebrow": "FREE INITIATIVE",
+    "s3heading": "Schobot's free initiative to train 10,000 professors and researchers.",
+    "s3body": "Applied training on the Schobot AI research tool, academic research writing and preparation for international publishing.",
+    "s3cta": "Register for the initiative",
+    "s4eyebrow": "RESPONSIBLE AI",
+    "s4heading": "The researcher is the primary actor; AI is a tool that supports them.",
+    "s4body": "We put people at the center of technology, with transparency, privacy, academic integrity and human oversight.",
+    "s4cta": "Get to know Schobot",
     "prevSlide": "Previous slide",
     "nextSlide": "Next slide",
     "goToSlide": "Go to slide {n}"
   },
   "About": {
     "eyebrow": "WHO WE ARE",
-    "heading": "Technology designed around academic work.",
-    "body1": "Schobot is an academic technology company creating products that help people discover knowledge, work with research materials and develop practical academic skills.",
-    "body2": "Our product ecosystem covers complementary parts of the academic journey, from AI-assisted research to learning, training and knowledge organization.",
-    "learnMore": "Learn more"
+    "heading": "Knowledge, education and technology in one ecosystem.",
+    "body1": "We believe societies progress through their ability to produce knowledge, develop people and offer continuous learning opportunities, while making conscious use of technological change.",
+    "body2": "So we build connected solutions that serve every stage of learning and human development — from building children's skills to supporting researchers, academics, and professional and institutional development.",
+    "learnMore": "Get to know Schobot"
   },
   "Technologies": {
-    "eyebrow": "MAIN TECHNOLOGIES",
-    "heading": "Explore an AI stack made for Arabic content.",
-    "body": "Three technology families can be used independently or combined into larger automation workflows.",
-    "t1heading": "Speech Technologies",
-    "t1subheading": "Make speech content searchable and actionable.",
-    "t1body": "Use fast speech recognition and text-to-speech components for transcription, media workflows, call analytics and voice-driven interfaces.",
-    "t1cta": "Read more",
-    "t2heading": "Optical Character Recognition",
-    "t2subheading": "Get more value from documents.",
-    "t2body": "Convert scanned Arabic and English documents into editable, searchable and structured information suitable for downstream business systems.",
-    "t2cta": "Read more",
-    "t3heading": "Natural Language Processing",
-    "t3subheading": "Understand the meaning inside Arabic text.",
-    "t3body": "Use text classification, named-entity recognition, diacritization and enrichment tools to build better search, automation and content experiences.",
-    "t3cta": "Read more"
+    "eyebrow": "WHAT WE OFFER",
+    "heading": "Connected solutions for research, training and knowledge digitization.",
+    "body": "Our research, OCR and publishing solutions can be used independently or combined.",
+    "t1heading": "Researchers' platform and app",
+    "t1subheading": "A digital environment for research work.",
+    "t1body": "A digital environment for researchers, academics and research teams that supports organizing the research workflow, working with references and documents, and collaboration — with AI-assisted tools, while verification and scientific judgment stay with the researcher.",
+    "t1cta": "Learn more",
+    "t2heading": "Optical Character Recognition (OCR)",
+    "t2subheading": "Double the value of your documents.",
+    "t2body": "Convert scanned images of Arabic and English documents into fully editable, searchable text files using the precise RDI engine.",
+    "t2cta": "Learn more",
+    "t3heading": "Publishing and digital publishing",
+    "t3subheading": "From manuscript to published work.",
+    "t3body": "We prepare scientific and educational content for print and electronic publishing and follow the steps through. Two future tracks are in preparation: digitizing Islamic studies and manuscripts, and simplifying science for children.",
+    "t3cta": "Learn more"
   },
   "Products": {
     "eyebrow": "OUR PRODUCTS",
-    "heading": "A growing product ecosystem for research, learning and academic growth.",
-    "badge": "Schobot academic technology ecosystem",
+    "heading": "Products and solutions for research, learning and training.",
+    "badge": "Schobot: an integrated ecosystem for knowledge, education, consulting and technology",
     "more": "More products",
     "less": "Show less",
     "visitWebsite": "Visit website",
@@ -70,25 +70,22 @@
   },
   "Audience": {
     "eyebrow": "WHO WE SERVE",
-    "heading": "Built for the people who research, teach and learn.",
-    "researchers": "Researchers",
-    "students": "University Students",
-    "educators": "Educators",
-    "youngLearners": "Young Learners"
+    "heading": "Built for researchers, institutions, families and partners.",
+    "researchers": "Researchers and academics",
+    "universities": "Universities and institutions",
+    "parents": "Parents and learners",
+    "partners": "Partners"
   },
   "Partners": {
-    "cap1": "PDF SEARCH",
-    "cap2": "TRANSLATION",
-    "cap3": "CITATIONS",
-    "cap4": "RESEARCH TRAINING",
-    "cap5": "COURSES",
-    "cap6": "KIDS PROGRAMS"
+    "cap1": "RESPONSIBLE AI",
+    "cap2": "SUSTAINABLE DEVELOPMENT",
+    "cap3": "KNOWLEDGE DIGITIZATION"
   },
   "CTA": {
-    "eyebrow": "LET'S BUILD",
-    "heading": "Explore the Schobot academic ecosystem.",
-    "body": "Use Schobot for research workflows or BAZ Academy for learning and training.",
-    "cta": "Get started"
+    "eyebrow": "LET'S CONNECT",
+    "heading": "Let's connect and build new opportunities for knowledge, learning and development.",
+    "body": "Whether you are a researcher, learner, parent or represent a university, educational institution or training body, we'd be glad to receive your inquiry and discuss the best way to benefit from our products or work with us.",
+    "cta": "Contact us"
   },
   "Modal": {
     "eyebrow": "GET STARTED",
@@ -99,99 +96,161 @@
     "company": "Company",
     "phone": "Phone",
     "interest": "Interest",
-    "interestSpeech": "Speech AI",
-    "interestOCR": "OCR",
-    "interestNLP": "NLP",
-    "interestCustom": "Custom AI solution",
+    "interestSpeech": "Researchers platform and app",
+    "interestOCR": "OCR service",
+    "interestNLP": "BAZ Academy programs",
+    "interestCustom": "Partnership or other",
     "message": "How can we help?",
     "submit": "Submit",
     "success": "Message received. We'll be in touch soon.",
     "close": "Close"
   },
   "Footer": {
-    "tagline": "Schobot is an academic technology company building products for research, learning and training.",
+    "tagline": "Schobot is an integrated ecosystem for knowledge, education, consulting and technology.",
     "productsHeading": "Products",
     "toolsHeading": "Academic Tools",
     "companyHeading": "Company",
-    "toolAcademicSearch": "Academic PDF Search",
-    "toolTranslation": "Translation & Citation",
-    "toolCourses": "Courses & Training",
+    "toolAcademicSearch": "Researchers platform",
+    "toolTranslation": "OCR service",
+    "toolCourses": "Training and BAZ Academy programs",
     "companyAbout": "About us",
     "companyProducts": "Products",
     "companyContact": "Contact us",
-    "companyCareers": "Careers",
     "copyright": "© {year} Schobot. All rights reserved.",
     "contactHeading": "Connect with us"
   },
   "AboutPage": {
     "hero": {
       "eyebrow": "ABOUT SCHOBOT",
-      "title": "Technology built around the way researchers work",
-      "description": "Schobot builds intelligent academic tools that help researchers, postgraduate students and academics work with scientific knowledge more efficiently."
+      "title": "An integrated ecosystem for knowledge, education, consulting and technology",
+      "description": "We develop knowledge, empower people and design solutions that help individuals and institutions learn, research, innovate and grow."
     },
     "intro": {
       "eyebrow": "WHO WE ARE",
-      "title": "Making scientific research more accessible, efficient and precise",
-      "description1": "Scientific research often requires researchers to spend countless hours reading documents, searching for relevant information, organizing references and preparing academic material.",
-      "description2": "Schobot was created to simplify this process. We use artificial intelligence to help researchers search inside academic documents, analyze PDFs, extract relevant information, work with scanned material, translate academic content and prepare research drafts more efficiently.",
-      "description3": "Our goal is not to replace the researcher. It is to give researchers better tools so they can spend less time on repetitive work and more time thinking, analyzing and discovering."
+      "title": "Institutional profile",
+      "description1": "Schobot is a company working in information and communications technology and in developing knowledge, educational, research and training solutions. Its vision is to use knowledge, specialist expertise and digital technology to offer products and services that help individuals and institutions learn, produce, collaborate and grow.",
+      "description2": "We are not a substitute for the person or the specialist. We build supportive tools and environments that strengthen their ability to reach knowledge, organize their work and improve productivity, while verification, evaluation and decision-making remain a human responsibility.",
+      "description3": "Our philosophy: people first, knowledge as the basis of progress, and technology as a tool for empowerment. We measure the value of solutions not by how new the technology is, but by their real benefit to the user, ease of use, quality of output, and respect for privacy and integrity."
     },
     "mission": {
       "eyebrow": "OUR MISSION",
-      "title": "Reduce the effort behind academic research",
-      "description": "Our mission is to remove unnecessary manual work from the research process by building intelligent tools that help academics find, understand and organize scientific information faster."
+      "title": "Integrated solutions for learning, research and collaboration",
+      "description": "To develop integrated educational, academic, research and technical solutions that combine human expertise, digital innovation and responsible AI, empowering individuals and institutions to learn, produce and collaborate efficiently."
     },
     "vision": {
       "eyebrow": "OUR VISION",
-      "title": "A smarter research experience for academics everywhere",
-      "description": "We aim to build a trusted AI research environment that supports academics across languages and disciplines while keeping accuracy, traceability and responsible use of technology at the center of the experience."
+      "title": "A trusted knowledge and technology ecosystem",
+      "description": "To be a trusted knowledge and technology ecosystem that contributes to developing education, scientific research and human empowerment, and to widening access to knowledge and learning."
     },
     "principles": {
-      "eyebrow": "WHAT GUIDES US",
-      "title": "Built for serious academic work",
-      "precision": {
-        "title": "Academic precision",
-        "description": "Research results should remain connected to their original sources. Schobot is designed to help researchers trace extracted information back to the documents and pages it came from."
+      "eyebrow": "RESPONSIBLE AI",
+      "title": "The researcher is the primary actor; AI is a tool that supports them",
+      "oversight": {
+        "title": "Human oversight",
+        "description": "The user remains responsible for reviewing outputs, verifying them and making decisions."
       },
-      "multilingual": {
-        "title": "Multilingual research",
-        "description": "Academic knowledge should not be limited by language. Schobot supports research workflows across Arabic, English and French."
-      },
-      "efficiency": {
-        "title": "Research efficiency",
-        "description": "We automate repetitive parts of literature review and document analysis so researchers can focus their time on interpretation, critical thinking and discovery."
+      "transparency": {
+        "title": "Transparency",
+        "description": "Explaining the nature and limits of technical assistance where appropriate."
       },
       "privacy": {
-        "title": "Research privacy",
-        "description": "Academic work can contain valuable and sensitive material. Protecting researchers' documents and maintaining confidentiality are fundamental parts of the Schobot experience."
+        "title": "Privacy and data protection",
+        "description": "Handling user data according to the policies and procedures actually adopted."
+      },
+      "integrity": {
+        "title": "Academic integrity",
+        "description": "Not encouraging plagiarism, fabricated sources, or presenting automated output as independent human work."
       }
     },
     "technology": {
-      "eyebrow": "WHAT WE BUILD",
-      "title": "AI tools for every stage of working with academic documents",
-      "description": "Schobot combines document processing and artificial intelligence to create practical tools for researchers.",
-      "search": {
-        "title": "Semantic Research Search",
-        "description": "Search inside uploaded academic references and quickly find relevant paragraphs, information and citations."
+      "eyebrow": "WHAT WE OFFER",
+      "title": "Solutions for every stage of learning and human development",
+      "description": "Connected solutions that serve learners, researchers, academics and institutions.",
+      "quran": {
+        "title": "Quran and Arabic education",
+        "description": "Digital solutions that ease access to teachers and connect them with learners."
       },
-      "ocr": {
-        "title": "Document & OCR Processing",
-        "description": "Turn scanned research material and image-based PDF documents into content that can be searched and edited."
+      "research": {
+        "title": "Scientific research and academic collaboration",
+        "description": "A collaborative digital environment that supports researchers and research teams."
       },
-      "translation": {
-        "title": "Academic Translation",
-        "description": "Translate scientific and academic material while preserving the meaning and terminology of the original content."
+      "kids": {
+        "title": "Child development and capacity building",
+        "description": "Programs that develop cognitive, language, leadership and technology skills."
       },
-      "assistant": {
-        "title": "AI Research Assistance",
-        "description": "Use AI to organize information, analyze references and support the preparation of structured academic material."
+      "professional": {
+        "title": "Academic and professional development",
+        "description": "Training and consulting programs for students, researchers, academics and professionals."
       }
     },
     "closing": {
-      "eyebrow": "THE FUTURE OF RESEARCH",
-      "title": "Helping researchers spend more time discovering",
-      "description": "We believe technology should make research easier to navigate without taking control away from the researcher. Schobot continues to develop tools that make academic knowledge easier to search, understand and use.",
-      "button": "Explore Schobot"
+      "eyebrow": "OUR VALUES",
+      "title": "Humanity, quality, credibility, innovation, collaboration and responsibility",
+      "description": "We put people at the center of technology and stress transparency, privacy, academic integrity and human oversight. We build tools that support people rather than replace them.",
+      "button": "Explore our products"
     }
+  },
+  "Stats": {
+    "label": "Impact",
+    "n1": "researchers trained with us",
+    "n2": "countries",
+    "n3": "collaborating universities and educational institutions",
+    "n4": "users of the Schobot program",
+    "source": "According to Schobot data"
+  },
+  "ProductItems": {
+    "quran": {
+      "name": "Quran and Arabic Language App",
+      "category": "DIGITAL LEARNING APP",
+      "description": "A digital space that makes it easier to reach Quran and Arabic teachers and connects teachers with learners in an organized learning experience.",
+      "cta": "Explore the app"
+    },
+    "schobot": {
+      "name": "Researchers Platform and App",
+      "category": "AI-ASSISTED RESEARCH ENVIRONMENT",
+      "description": "A collaborative research environment that supports organizing research work and the responsible use of AI tools.",
+      "cta": "Join the research community"
+    },
+    "bazKids": {
+      "name": "BAZ Academy for Kids",
+      "category": "KIDS PROGRAMS",
+      "description": "Interactive programs that develop a child's personality and skills.",
+      "cta": "Discover kids programs"
+    },
+    "bazAdults": {
+      "name": "BAZ Academy for Adults",
+      "category": "TRAINING AND CONSULTING",
+      "description": "Programs for academic and professional qualification, training and consulting.",
+      "cta": "Explore the programs"
+    },
+    "ocr": {
+      "name": "Optical Character Recognition (OCR)",
+      "category": "DOCUMENT SERVICE",
+      "description": "Convert scanned documents into editable, searchable text with the precise RDI engine.",
+      "cta": "Explore the service"
+    },
+    "publishing": {
+      "name": "Publishing and Digital Publishing",
+      "category": "PUBLISHING SERVICE",
+      "description": "Preparing content for print and electronic publishing, with future tracks for digitizing manuscripts and simplifying science for children (coming soon).",
+      "cta": "Explore the service"
+    }
+  },
+  "Meta": {
+    "title": "Schobot | Knowledge, education, research and technology solutions",
+    "description": "Discover Schobot, an integrated ecosystem of research, educational, training and technology solutions that supports learning, knowledge production and responsible innovation.",
+    "aboutTitle": "About us | Schobot",
+    "aboutDescription": "Schobot is an integrated ecosystem for knowledge, education, consulting and technology: our vision, mission, values and responsible AI."
+  },
+  "ContactChannels": {
+    "eyebrow": "CONTACT CHANNELS",
+    "heading": "Let's connect and build new opportunities for knowledge, learning and development.",
+    "email": "Email",
+    "egypt": "Egypt: phone and WhatsApp",
+    "uae": "UAE: phone and WhatsApp",
+    "initiative": "Training initiative WhatsApp",
+    "address": "Address",
+    "addressValue": "7 Wahdan Street, Nasr City, Cairo, Egypt",
+    "websites": "Websites"
   }
 }
