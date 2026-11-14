@@ -252,5 +252,186 @@
     "address": "Address",
     "addressValue": "7 Wahdan Street, Nasr City, Cairo, Egypt",
     "websites": "Websites"
+  },
+  "ProductPages": {
+    "quran": {
+      "seoTitle": "Quran and Arabic Language App | Schobot",
+      "eyebrow": "DIGITAL LEARNING APP",
+      "title": "Quran and Arabic Language App",
+      "intro": "A digital solution that makes it easier to reach Quran and Arabic teachers, connects teachers with learners from different regions in an organized learning experience, and moves traditional education into an electronic environment that supports sustainable development.",
+      "cta": "Ask about the app",
+      "sections": [
+        {
+          "title": "The value it offers",
+          "items": [
+            "Easier access to the teacher.",
+            "Support for communication between teacher and learner.",
+            "Wider opportunities for remote learning."
+          ]
+        }
+      ],
+      "note": "Details on how to use the app, who it is for, booking, supported languages and countries, FAQ and technical support will be added once confirmed by the team.",
+      "description": "A digital solution that makes it easier to reach Quran and Arabic teachers, connects teachers with learners from different regions in an organized learning experience, and moves traditional education into an electronic environment that supports sustainable development."
+    },
+    "schobot": {
+      "seoTitle": "Schobot Platform for Researchers | AI in Scientific Research",
+      "eyebrow": "RESEARCHERS PLATFORM AND APP",
+      "title": "Researchers Platform and App",
+      "intro": "A digital environment for researchers, academics and research teams. It supports organizing the stages of research work, working with references and documents, collaboration and knowledge exchange, and using supporting AI tools. It turns hard-copy knowledge into searchable, citable electronic knowledge, while verification and scientific judgment stay with the researcher.",
+      "cta": "Explore the researchers platform",
+      "cta2": "Join the research community",
+      "sections": [
+        {
+          "title": "Services and capabilities",
+          "items": [
+            "Smart analysis of literature and references: reading documents and extracting topics, ideas and first summaries.",
+            "PDF and document processing: converting and extracting content so it is easier to review and edit, within the supported formats.",
+            "Multilingual support: working with material in several languages and translating between the languages the platform supports.",
+            "Organizing research work: planning projects and tasks and tracking progress.",
+            "Research teams and academic collaboration.",
+            "Methodological and statistical support, within the scope of service actually available.",
+            "Editing and language proofreading.",
+            "Training and consulting in research skills, academic writing and responsible use of AI."
+          ]
+        },
+        {
+          "title": "Approved platform links",
+          "items": [
+            "Login and registration: app.schobot.com",
+            "Website: www.schobot.com"
+          ]
+        }
+      ],
+      "note": "Automated tools support the researcher; checking results and the scientific judgment remain the researcher's responsibility.",
+      "description": "A digital environment for researchers, academics and research teams. It supports organizing the stages of research work, working with references and documents, collaboration and knowledge exchange, and using supporting AI tools. It turns hard-copy knowledge into searchable, citable electronic knowledge, while verification and scientific judgment stay with the researcher."
+    },
+    "bazKids": {
+      "seoTitle": "BAZ Academy for Kids | Skills Development Programs",
+      "eyebrow": "KIDS PROGRAMS",
+      "title": "BAZ Academy for Kids",
+      "intro": "An educational and training ecosystem that develops a child's personality and cognitive, language, leadership and technology skills through interactive activities and programs that respect the age stage and needs of learners, building a digitally aware generation that understands AI and supporting sustainable development.",
+      "cta": "Discover kids programs",
+      "sections": [
+        {
+          "title": "Program areas (according to approved programs)",
+          "items": [
+            "Personal and leadership skills.",
+            "Thinking and creativity.",
+            "Digital and technology skills, including programming, AI and robotics.",
+            "Languages, including Arabic, the Quran and ethics.",
+            "Educational and family guidance."
+          ]
+        }
+      ],
+      "note": "Age groups and the nature of each program, provider qualifications, child protection and privacy measures, and the policy for communicating with and obtaining consent from parents will be published after review of the child-protection and privacy policies.",
+      "description": "An educational and training ecosystem that develops a child's personality and cognitive, language, leadership and technology skills through interactive activities and programs that respect the age stage and needs of learners, building a digitally aware generation that understands AI and supporting sustainable development."
+    },
+    "bazAdults": {
+      "seoTitle": "BAZ Academy for Adults | Academic and Professional Training",
+      "eyebrow": "TRAINING AND CONSULTING",
+      "title": "BAZ Academy for Adults",
+      "intro": "A platform and programs for academic and professional training and qualification, and consulting, aimed at university students, researchers, faculty members, experts and professionals, with training on AI tools and knowledge digitization and support for sustainable development goals.",
+      "cta": "Explore BAZ Academy programs",
+      "cta2": "Contact us for prices",
+      "sections": [
+        {
+          "title": "Suggested fields",
+          "items": [
+            "Scientific research and academic writing.",
+            "AI tools.",
+            "Digital skills.",
+            "Professional development, including management and leadership.",
+            "Languages.",
+            "Academic and institutional consulting."
+          ]
+        },
+        {
+          "title": "Creative Scientific Research Camp",
+          "text": "A proposed program that runs from writing a research article and reviews, through academic writing, idea generation and using AI research tools, and ends with forming research teams under Schobot's supervision."
+        },
+        {
+          "title": "Program details",
+          "text": "Target group, learning outcomes, topics, delivery method, program duration once approved, and trainers' qualifications. Price requests are directed to the contact form."
+        }
+      ],
+      "note": "Camp details (number of tools, duration and outputs) will be shown after approval.",
+      "description": "A platform and programs for academic and professional training and qualification, and consulting, aimed at university students, researchers, faculty members, experts and professionals, with training on AI tools and knowledge digitization and support for sustainable development goals."
+    },
+    "ocr": {
+      "seoTitle": "OCR Service | Converting Scanned Documents into Text",
+      "eyebrow": "DOCUMENT SERVICE",
+      "title": "Optical Character Recognition (OCR)",
+      "intro": "Double the value of your documents. Convert scanned images of Arabic and English documents into fully editable, searchable text files using the precise RDI engine.",
+      "cta": "Request the OCR service",
+      "sections": [
+        {
+          "title": "What does the service offer?",
+          "items": [
+            "From images to text: converting scanned pages into editable text files.",
+            "Arabic and English: support for Arabic and English documents with the RDI engine.",
+            "Full text search: searching, editing, copying and archiving."
+          ]
+        },
+        {
+          "title": "How does it work?",
+          "items": [
+            "Upload your documents: scanned images or files.",
+            "The engine processes them: it recognizes the characters and converts the pages to text.",
+            "You get fully editable, searchable text files."
+          ]
+        },
+        {
+          "title": "Who is it for?",
+          "items": [
+            "Universities and researchers: digitizing references, books and theses, and preparing texts for analysis in the researchers platform.",
+            "Libraries, publishers and archives: digitizing and indexing books and archives.",
+            "Institutions: archiving paper documents and correspondence."
+          ]
+        }
+      ],
+      "description": "Double the value of your documents. Convert scanned images of Arabic and English documents into fully editable, searchable text files using the precise RDI engine."
+    },
+    "publishing": {
+      "seoTitle": "Publishing and Digital Publishing | Schobot",
+      "eyebrow": "PUBLISHING SERVICE",
+      "title": "Publishing and Digital Publishing",
+      "intro": "We prepare scientific and educational content for print and electronic publishing and follow its steps through, and we are working on two future tracks: digitizing Islamic studies and manuscripts, and simplifying science for children through books and interactive media.",
+      "cta": "Request the publishing service",
+      "sections": [
+        {
+          "title": "Available services",
+          "items": [
+            "Academic and educational publishing: preparing university books, research and educational content for publication, with language proofreading, layout and follow-up.",
+            "Electronic publishing: preparing content in searchable, shareable digital formats, and benefiting from the OCR service.",
+            "Special content and projects: authoring and producing content with experts, and partnerships with publishers, universities and libraries."
+          ]
+        },
+        {
+          "title": "Future track 1: digitizing Islamic studies and manuscripts (coming soon)",
+          "items": [
+            "Scanning manuscripts and Islamic studies digitally.",
+            "Converting them into searchable text with the RDI engine.",
+            "Organized digital indexing and archiving.",
+            "Making them available to researchers and institutions under scholarly controls."
+          ]
+        },
+        {
+          "title": "Future track 2: simplifying science for children (coming soon)",
+          "items": [
+            "Illustrated books that simplify scientific concepts.",
+            "Interactive media and electronic educational games.",
+            "Content written by scientists and researchers and produced by Schobot teams.",
+            "Suitable for children, schools and training centers."
+          ]
+        }
+      ],
+      "note": "The two future tracks are in preparation; no launch dates are given until they are approved.",
+      "description": "We prepare scientific and educational content for print and electronic publishing and follow its steps through, and we are working on two future tracks: digitizing Islamic studies and manuscripts, and simplifying science for children through books and interactive media."
+    }
+  },
+  "ProductPage": {
+    "back": "All products",
+    "soon": "Coming soon",
+    "noteLabel": "Note"
   }
 }

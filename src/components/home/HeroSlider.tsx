@@ -203,7 +203,7 @@ export default function HeroSlider() {
                       <span className="rtl-flip" aria-hidden="true">↗</span>
                     </a>
                   )}
-                  <Link href="/products" className="hero-read-more">
+                  <Link href="/#products" className="hero-read-more">
                     <ArrowRight size={14} className="rtl-flip" />
                   </Link>
                 </div>

@@ -1,5 +1,6 @@
 import type { Product } from "@/types/product";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 
 interface ProductCardProps {
   product: Product;
@@ -65,17 +66,10 @@ export default function ProductCard({
         {(product.status === "concept" || product.status === "coming-soon") && (
           <span className="status-badge status-concept">{conceptLabel}</span>
         )}
-        {product.url && product.status === "live" && (
-          <a
-            href={product.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="product-link"
-          >
-            {visitLabel}
-            <ArrowUpRight size={13} aria-hidden="true" />
-          </a>
-        )}
+        <Link href={`/products/${product.slug}`} className="product-link">
+          {visitLabel}
+          <ArrowUpRight size={13} aria-hidden="true" className="rtl-flip" />
+        </Link>
       </div>
     </article>
   );
