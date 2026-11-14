@@ -4,6 +4,8 @@ import type { Product } from "@/types/product";
 export const products: Product[] = [
   {
     id: "quran-app",
+    slug: "quran",
+    ctaHref: "/#channels",
     messageKey: "quran",
     image: "",
     status: "coming-soon",
@@ -11,6 +13,9 @@ export const products: Product[] = [
   },
   {
     id: "schobot",
+    slug: "researchers",
+    ctaHref: "https://schobot.com",
+    cta2Href: "https://app.schobot.com",
     messageKey: "schobot",
     image: "/images/products/schobot.webp",
     url: "https://schobot.com",
@@ -18,6 +23,8 @@ export const products: Product[] = [
   },
   {
     id: "baz-kids",
+    slug: "kids",
+    ctaHref: "https://bazacademy.com",
     messageKey: "bazKids",
     image: "/images/products/baz-academy.webp",
     url: "https://bazacademy.com",
@@ -25,6 +32,9 @@ export const products: Product[] = [
   },
   {
     id: "baz-academy",
+    slug: "adults",
+    ctaHref: "https://bazacademy.com",
+    cta2Href: "/#channels",
     messageKey: "bazAdults",
     image: "/images/products/baz-academy.webp",
     url: "https://bazacademy.com",
@@ -32,12 +42,16 @@ export const products: Product[] = [
   },
   {
     id: "ocr",
+    slug: "ocr",
+    ctaHref: "/#channels",
     messageKey: "ocr",
     image: "",
     conceptBadge: "OCR",
   },
   {
     id: "publishing",
+    slug: "publishing",
+    ctaHref: "/#channels",
     messageKey: "publishing",
     image: "",
     conceptBadge: "PUB",

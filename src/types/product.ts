@@ -5,6 +5,11 @@ export type ProductStatus = "live" | "concept" | "coming-soon";
 export type Product = {
   id: string;
   messageKey: string;
+  /** URL segment of the product page: /products/<slug> */
+  slug: string;
+  /** Primary / secondary buttons on the product page. */
+  ctaHref: string;
+  cta2Href?: string;
   image: string;
   url?: string;
   status?: ProductStatus;

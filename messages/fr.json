@@ -252,5 +252,186 @@
     "address": "Adresse",
     "addressValue": "7 rue Wahdan, Nasr City, Le Caire, Égypte",
     "websites": "Sites web"
+  },
+  "ProductPages": {
+    "quran": {
+      "seoTitle": "Application du Coran et de la langue arabe | Schobot",
+      "eyebrow": "APPLICATION D'APPRENTISSAGE",
+      "title": "Application du Coran et de la langue arabe",
+      "intro": "Une solution numérique qui facilite l'accès aux enseignants du Coran et de la langue arabe, met en relation enseignants et apprenants de différentes régions dans une expérience d'apprentissage organisée, et transpose l'enseignement traditionnel dans un environnement électronique qui soutient le développement durable.",
+      "cta": "Se renseigner sur l'application",
+      "sections": [
+        {
+          "title": "La valeur apportée",
+          "items": [
+            "Faciliter l'accès à l'enseignant.",
+            "Soutenir la communication entre enseignant et apprenant.",
+            "Élargir les possibilités d'apprentissage à distance."
+          ]
+        }
+      ],
+      "note": "Les détails sur l'utilisation de l'application, les bénéficiaires, la réservation, les langues et pays pris en charge, la FAQ et l'assistance technique seront ajoutés une fois confirmés par l'équipe.",
+      "description": "Une solution numérique qui facilite l'accès aux enseignants du Coran et de la langue arabe, met en relation enseignants et apprenants de différentes régions dans une expérience d'apprentissage organisée, et transpose l'enseignement traditionnel dans un environnement électronique qui soutient le développement durable."
+    },
+    "schobot": {
+      "seoTitle": "Plateforme Schobot pour chercheurs | L'IA dans la recherche scientifique",
+      "eyebrow": "PLATEFORME ET APPLICATION POUR CHERCHEURS",
+      "title": "Plateforme et application pour chercheurs",
+      "intro": "Un environnement numérique pour les chercheurs, universitaires et équipes de recherche. Il soutient l'organisation des étapes du travail de recherche, la gestion des références et des documents, la collaboration et l'échange de connaissances, avec des outils d'IA d'assistance. Il transforme le savoir papier en savoir électronique consultable et citable, la vérification et le jugement scientifique restant au chercheur.",
+      "cta": "Découvrir la plateforme pour chercheurs",
+      "cta2": "Rejoindre la communauté de recherche",
+      "sections": [
+        {
+          "title": "Services et capacités",
+          "items": [
+            "Analyse intelligente de la littérature et des références : lecture des documents et extraction de thèmes, d'idées et de premiers résumés.",
+            "Traitement des PDF et documents : conversion et extraction de contenu pour faciliter la relecture et l'édition, selon les formats pris en charge.",
+            "Support multilingue : travail sur des documents en plusieurs langues et traduction entre les langues prises en charge.",
+            "Organisation du travail de recherche : planification des projets et des tâches et suivi de l'avancement.",
+            "Équipes de recherche et collaboration académique.",
+            "Soutien méthodologique et statistique, selon le périmètre de service réellement disponible.",
+            "Édition et relecture linguistique.",
+            "Formation et conseil en compétences de recherche, rédaction académique et usage responsable de l'IA."
+          ]
+        },
+        {
+          "title": "Liens officiels de la plateforme",
+          "items": [
+            "Connexion et inscription : app.schobot.com",
+            "Site : www.schobot.com"
+          ]
+        }
+      ],
+      "note": "Les outils automatiques soutiennent le chercheur ; la vérification des résultats et le jugement scientifique restent de sa responsabilité.",
+      "description": "Un environnement numérique pour les chercheurs, universitaires et équipes de recherche. Il soutient l'organisation des étapes du travail de recherche, la gestion des références et des documents, la collaboration et l'échange de connaissances, avec des outils d'IA d'assistance. Il transforme le savoir papier en savoir électronique consultable et citable, la vérification et le jugement scientifique restant au chercheur."
+    },
+    "bazKids": {
+      "seoTitle": "BAZ Academy pour enfants | Programmes de développement des compétences",
+      "eyebrow": "PROGRAMMES ENFANTS",
+      "title": "BAZ Academy pour enfants",
+      "intro": "Un écosystème éducatif et de formation qui développe la personnalité de l'enfant et ses compétences cognitives, linguistiques, de leadership et technologiques, par des activités et programmes interactifs adaptés à l'âge et aux besoins des apprenants, pour former une génération numérique consciente de l'IA et soutenir le développement durable.",
+      "cta": "Découvrir les programmes enfants",
+      "sections": [
+        {
+          "title": "Axes des programmes (selon les programmes approuvés)",
+          "items": [
+            "Compétences personnelles et de leadership.",
+            "Réflexion et créativité.",
+            "Compétences numériques et technologiques, dont la programmation, l'IA et la robotique.",
+            "Langues, dont l'arabe, le Coran et l'éthique.",
+            "Orientation éducative et familiale."
+          ]
+        }
+      ],
+      "note": "Les tranches d'âge et la nature de chaque programme, les qualifications des intervenants, les mesures de protection de l'enfant et de confidentialité, ainsi que la politique de communication avec les parents et d'obtention de leur accord seront publiées après examen des politiques de protection de l'enfant et de confidentialité.",
+      "description": "Un écosystème éducatif et de formation qui développe la personnalité de l'enfant et ses compétences cognitives, linguistiques, de leadership et technologiques, par des activités et programmes interactifs adaptés à l'âge et aux besoins des apprenants, pour former une génération numérique consciente de l'IA et soutenir le développement durable."
+    },
+    "bazAdults": {
+      "seoTitle": "BAZ Academy pour adultes | Formation académique et professionnelle",
+      "eyebrow": "FORMATION ET CONSEIL",
+      "title": "BAZ Academy pour adultes",
+      "intro": "Une plateforme et des programmes de formation, de qualification académique et professionnelle et de conseil, destinés aux étudiants universitaires, chercheurs, enseignants-chercheurs, experts et professionnels, avec une formation aux outils d'IA et à la numérisation du savoir et un soutien aux objectifs de développement durable.",
+      "cta": "Découvrir les programmes BAZ Academy",
+      "cta2": "Nous contacter pour les tarifs",
+      "sections": [
+        {
+          "title": "Domaines proposés",
+          "items": [
+            "Recherche scientifique et rédaction académique.",
+            "Outils d'IA.",
+            "Compétences numériques.",
+            "Développement professionnel, dont la gestion et le leadership.",
+            "Langues.",
+            "Conseil académique et institutionnel."
+          ]
+        },
+        {
+          "title": "Camp de recherche scientifique créative",
+          "text": "Un programme proposé qui va de la rédaction d'un article de recherche et de revues de littérature à la rédaction académique, la génération d'idées et l'usage d'outils d'IA de recherche, et se termine par la constitution d'équipes de recherche sous la supervision de Schobot."
+        },
+        {
+          "title": "Présentation de chaque programme",
+          "text": "Public cible, acquis d'apprentissage, thèmes, mode de réalisation, durée du programme une fois approuvée, et qualifications des formateurs. Les demandes de tarifs sont dirigées vers le formulaire de contact."
+        }
+      ],
+      "note": "Les détails du camp (nombre d'outils, durée et livrables) seront affichés après approbation.",
+      "description": "Une plateforme et des programmes de formation, de qualification académique et professionnelle et de conseil, destinés aux étudiants universitaires, chercheurs, enseignants-chercheurs, experts et professionnels, avec une formation aux outils d'IA et à la numérisation du savoir et un soutien aux objectifs de développement durable."
+    },
+    "ocr": {
+      "seoTitle": "Service OCR | Convertir des documents numérisés en texte",
+      "eyebrow": "SERVICE DOCUMENTAIRE",
+      "title": "Reconnaissance optique de caractères (OCR)",
+      "intro": "Doublez la valeur de vos documents. Convertissez des images numérisées de documents arabes et anglais en fichiers texte entièrement modifiables et consultables grâce au moteur RDI précis.",
+      "cta": "Demander le service OCR",
+      "sections": [
+        {
+          "title": "Que propose le service ?",
+          "items": [
+            "Des images au texte : conversion des pages numérisées en fichiers texte modifiables.",
+            "Arabe et anglais : prise en charge des documents arabes et anglais avec le moteur RDI.",
+            "Recherche intégrale dans le texte : recherche, édition, copie et archivage."
+          ]
+        },
+        {
+          "title": "Comment ça marche ?",
+          "items": [
+            "Téléversez vos documents : images ou fichiers numérisés.",
+            "Le moteur les traite : il reconnaît les caractères et convertit les pages en texte.",
+            "Vous obtenez des fichiers texte entièrement modifiables et consultables."
+          ]
+        },
+        {
+          "title": "Pour qui ?",
+          "items": [
+            "Universités et chercheurs : numérisation de références, livres et thèses, et préparation des textes pour l'analyse dans la plateforme pour chercheurs.",
+            "Bibliothèques, éditeurs et archives : numérisation et indexation des livres et des archives.",
+            "Institutions : archivage des documents et courriers papier."
+          ]
+        }
+      ],
+      "description": "Doublez la valeur de vos documents. Convertissez des images numérisées de documents arabes et anglais en fichiers texte entièrement modifiables et consultables grâce au moteur RDI précis."
+    },
+    "publishing": {
+      "seoTitle": "Édition et édition numérique | Schobot",
+      "eyebrow": "SERVICE D'ÉDITION",
+      "title": "Édition et édition numérique",
+      "intro": "Nous préparons les contenus scientifiques et pédagogiques pour l'édition papier et électronique et en suivons les étapes, et nous travaillons sur deux axes futurs : la numérisation des études islamiques et des manuscrits, et la vulgarisation scientifique pour les enfants par des livres et des médias interactifs.",
+      "cta": "Demander le service d'édition",
+      "sections": [
+        {
+          "title": "Services disponibles",
+          "items": [
+            "Édition académique et pédagogique : préparation de livres universitaires, de travaux de recherche et de contenus pédagogiques pour la publication, avec relecture linguistique, mise en page et suivi.",
+            "Édition électronique : préparation des contenus dans des formats numériques consultables et partageables, en tirant parti du service OCR.",
+            "Contenus et projets spéciaux : rédaction et production de contenus avec des experts, et partenariats avec des éditeurs, universités et bibliothèques."
+          ]
+        },
+        {
+          "title": "Premier axe futur : numérisation des études islamiques et des manuscrits (bientôt)",
+          "items": [
+            "Numérisation des manuscrits et des études islamiques.",
+            "Conversion en textes consultables avec le moteur RDI.",
+            "Indexation et archivage numériques organisés.",
+            "Mise à disposition des chercheurs et des institutions selon des règles scientifiques."
+          ]
+        },
+        {
+          "title": "Second axe futur : vulgarisation scientifique pour les enfants (bientôt)",
+          "items": [
+            "Livres illustrés qui simplifient les concepts scientifiques.",
+            "Médias interactifs et jeux éducatifs électroniques.",
+            "Contenus conçus par des scientifiques et chercheurs et réalisés par les équipes de Schobot.",
+            "Adaptés aux enfants, aux écoles et aux centres de formation."
+          ]
+        }
+      ],
+      "note": "Les deux axes futurs sont en préparation ; aucune date de lancement n'est annoncée avant leur approbation.",
+      "description": "Nous préparons les contenus scientifiques et pédagogiques pour l'édition papier et électronique et en suivons les étapes, et nous travaillons sur deux axes futurs : la numérisation des études islamiques et des manuscrits, et la vulgarisation scientifique pour les enfants par des livres et des médias interactifs."
+    }
+  },
+  "ProductPage": {
+    "back": "Tous les produits",
+    "soon": "Bientôt disponible",
+    "noteLabel": "Remarque"
   }
 }
