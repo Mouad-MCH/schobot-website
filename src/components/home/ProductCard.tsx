@@ -3,6 +3,9 @@ import { ArrowUpRight } from "lucide-react";
 
 interface ProductCardProps {
   product: Product;
+  name: string;
+  category: string;
+  description: string;
   visitLabel: string;
   conceptLabel: string;
 }
@@ -21,7 +24,7 @@ function ProductArt({ product }: { product: Product }) {
       </div>
     );
   }
-  if (product.id === "baz-academy") {
+  if (product.id.startsWith("baz")) {
     return (
       <div className="prod-img-baz" aria-hidden="true">
         <div className="baz-board" />
@@ -42,6 +45,9 @@ function ProductArt({ product }: { product: Product }) {
 
 export default function ProductCard({
   product,
+  name,
+  category,
+  description,
   visitLabel,
   conceptLabel,
 }: ProductCardProps) {
@@ -52,11 +58,11 @@ export default function ProductCard({
       </div>
 
       <div className="prod-info">
-        <span className="prod-category">{product.category}</span>
-        <h3 className="prod-name">{product.name}</h3>
-        <p className="prod-desc">{product.description}</p>
+        <span className="prod-category">{category}</span>
+        <h3 className="prod-name">{name}</h3>
+        <p className="prod-desc">{description}</p>
 
-        {product.status !== "live" && (
+        {(product.status === "concept" || product.status === "coming-soon") && (
           <span className="status-badge status-concept">{conceptLabel}</span>
         )}
         {product.url && product.status === "live" && (

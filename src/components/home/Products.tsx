@@ -9,6 +9,7 @@ const INITIAL_COUNT = 3;
 
 export default function Products() {
   const t = useTranslations("Products");
+  const items = useTranslations("ProductItems");
   const [showAll, setShowAll] = useState(false);
 
   const visibleProducts = showAll ? products : products.slice(0, INITIAL_COUNT);
@@ -52,8 +53,11 @@ export default function Products() {
             <ProductCard
               key={product.id}
               product={product}
-              visitLabel={t("visitWebsite")}
-              conceptLabel={t("concept")}
+              name={items(`${product.messageKey}.name`)}
+              category={items(`${product.messageKey}.category`)}
+              description={items(`${product.messageKey}.description`)}
+              visitLabel={items(`${product.messageKey}.cta`)}
+              conceptLabel={t("comingSoon")}
             />
           ))}
         </div>

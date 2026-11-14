@@ -7,9 +7,6 @@ export default async function Partners() {
     t("cap1"),
     t("cap2"),
     t("cap3"),
-    t("cap4"),
-    t("cap5"),
-    t("cap6"),
   ];
 
   return (

@@ -1,12 +1,11 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from 'next/link'
+import { Link } from "@/i18n/navigation";
 import {
   ArrowUpRight,
   BookOpen,
   FileSearch,
   Languages,
-  ScanText,
   ShieldCheck,
   Sparkles,
   Target,
@@ -18,15 +17,15 @@ const AboutPage = () => {
 
   const principles = [
     {
-      key: "precision",
+      key: "oversight",
+      icon: Eye,
+    },
+    {
+      key: "transparency",
       icon: FileSearch,
     },
     {
-      key: "multilingual",
-      icon: Languages,
-    },
-    {
-      key: "efficiency",
+      key: "integrity",
       icon: Sparkles,
     },
     {
@@ -37,20 +36,20 @@ const AboutPage = () => {
 
   const technologies = [
     {
-      key: "search",
+      key: "quran",
+      icon: BookOpen,
+    },
+    {
+      key: "research",
       icon: FileSearch,
     },
     {
-      key: "ocr",
-      icon: ScanText,
+      key: "kids",
+      icon: Sparkles,
     },
     {
-      key: "translation",
+      key: "professional",
       icon: Languages,
-    },
-    {
-      key: "assistant",
-      icon: BookOpen,
     },
   ] as const;
 
@@ -265,9 +264,7 @@ const AboutPage = () => {
             </p>
 
             <Link
-              href="https://schobot.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/#products"
               className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#00A99D] px-6 py-3.5 font-semibold text-white transition hover:bg-[#007D78] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#07384D] focus-visible:ring-offset-2"
             >
               {t("closing.button")}
