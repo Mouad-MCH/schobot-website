@@ -6,6 +6,8 @@ import Audience from "@/components/home/Audience";
 import Partners from "@/components/home/Partners";
 import Stats from "@/components/home/Stats";
 import ContactChannels from "@/components/home/ContactChannels";
+import WhyUs from "@/components/home/WhyUs";
+import PartnershipPaths from "@/components/home/PartnershipPaths";
 import CTA from "@/components/home/CTA";
 
 
@@ -18,6 +20,8 @@ export default function HomePage() {
         <Technologies />
         <Products />
         <Audience />
+        <WhyUs />
+        <PartnershipPaths />
         <Partners />
         <Stats />
         <ContactChannels />

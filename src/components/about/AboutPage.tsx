@@ -14,6 +14,8 @@ import {
 
 const AboutPage = () => {
   const t = useTranslations("AboutPage");
+  const v = useTranslations("AboutValues");
+  const values = v.raw("items") as string[];
 
   const principles = [
     {
@@ -204,6 +206,25 @@ const AboutPage = () => {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* VALUES */}
+      <section className="bg-[#F7FBFA] py-20" aria-labelledby="values-heading">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto mb-10 max-w-3xl text-center">
+            <p className="text-sm font-bold text-[#007D78]">{v("eyebrow")}</p>
+            <h2 id="values-heading" className="mt-3 text-3xl font-bold text-[#07384D] md:text-4xl">
+              {v("title")}
+            </h2>
+          </div>
+          <ul className="mx-auto grid max-w-4xl gap-x-12 sm:grid-cols-2">
+            {values.map((value) => (
+              <li key={value} className="border-b border-[#DCE9E7] py-4 text-lg font-semibold text-[#07384D]">
+                {value}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

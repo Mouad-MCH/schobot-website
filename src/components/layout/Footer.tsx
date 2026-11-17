@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export default async function Footer() {
   const t = await getTranslations("Footer");
+  const n = await getTranslations("Navigation");
 
   const year = new Date().getFullYear();
 
@@ -76,8 +77,13 @@ export default async function Footer() {
               <li>
                 <Link href="/#products" className="footer-link">{t("companyProducts")}</Link>
               </li>
+              <li><Link href="/partnerships" className="footer-link">{n("partnerships")}</Link></li>
+              <li><Link href="/initiative" className="footer-link">{n("initiative")}</Link></li>
+              <li><Link href="/impact" className="footer-link">{n("impact")}</Link></li>
+              <li><Link href="/knowledge" className="footer-link">{n("knowledge")}</Link></li>
+              <li><Link href="/news" className="footer-link">{n("news")}</Link></li>
               <li>
-                <Link href="/#channels" className="footer-link">{t("companyContact")}</Link>
+                <Link href="/contact" className="footer-link">{t("companyContact")}</Link>
               </li>
             </ul>
           </div>

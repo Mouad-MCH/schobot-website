@@ -14,7 +14,13 @@
     "dropPublishing": "Publishing",
     "miniTagline": "An integrated ecosystem for knowledge, education, consulting and technology",
     "openMenu": "Open navigation",
-    "closeMenu": "Close navigation"
+    "closeMenu": "Close navigation",
+    "partnerships": "Partnerships",
+    "initiative": "Training initiative",
+    "resources": "More",
+    "impact": "Partners & impact",
+    "knowledge": "Knowledge Hub",
+    "news": "News & announcements"
   },
   "Hero": {
     "s1eyebrow": "SCHOBOT ECOSYSTEM",
@@ -436,5 +442,462 @@
     "back": "All products",
     "soon": "Coming soon",
     "noteLabel": "Note"
+  },
+  "WhyUs": {
+    "eyebrow": "Why Schobot",
+    "heading": "One ecosystem connecting knowledge, learning and technology.",
+    "items": [
+      [
+        "Integration",
+        "Education, training, research and technology connected in one ecosystem."
+      ],
+      [
+        "Specialisation",
+        "Solutions built for the needs of specific groups."
+      ],
+      [
+        "Empowerment",
+        "Moving from acquiring knowledge to applying it."
+      ],
+      [
+        "Responsible technology",
+        "Digital tools and AI with human oversight and integrity."
+      ],
+      [
+        "Collaboration",
+        "Supporting learning and research communities and sharing expertise."
+      ],
+      [
+        "Continuous improvement",
+        "Improving products and services around users' needs."
+      ],
+      [
+        "Sustainable development",
+        "Opening access to knowledge and learning, and building capacity."
+      ],
+      [
+        "Digitising knowledge",
+        "Turning print knowledge into searchable, usable digital knowledge."
+      ]
+    ]
+  },
+  "Paths": {
+    "eyebrow": "Partnerships",
+    "heading": "Ways to partner",
+    "body": "We work with universities, research centres, government bodies, schools and publishers. Pick what fits, or start with a combined partnership.",
+    "items": [
+      "Research programme",
+      "BAZ Academy",
+      "Consulting",
+      "Software & predictive AI",
+      "International publishing",
+      "University initiative"
+    ],
+    "cta": "Explore partnership areas"
+  },
+  "AboutValues": {
+    "eyebrow": "Our values",
+    "title": "What we hold ourselves to",
+    "items": [
+      "Humanity and empowerment",
+      "Quality and craftsmanship",
+      "Credibility and integrity",
+      "Innovation and lifelong learning",
+      "Collaboration and knowledge sharing",
+      "Responsibility and privacy"
+    ]
+  },
+  "PageCommon": {
+    "soon": "Coming soon",
+    "home": "Home",
+    "openLink": "Open link"
+  },
+  "Pages": {
+    "partnerships": {
+      "seoTitle": "Schobot partnerships & services | Universities, institutions and schools",
+      "eyebrow": "Partnerships & services",
+      "title": "Partnerships and services for universities, institutions and schools",
+      "intro": "We work with universities, research centres, government bodies, factories, schools, nurseries and publishers. Pick what suits you, or start with a combined partnership that covers every area. We believe in partnerships built on clear goals, complementary expertise and shared value.",
+      "ctas": [
+        "Request an intro meeting",
+        "Explore partnership areas"
+      ],
+      "sections": [
+        {
+          "id": "paths",
+          "title": "Partnership paths",
+          "rows": [
+            [
+              "Universities and research centres",
+              "A training initiative for researchers on the Schobot platform, support preparing research for publication, updating university textbooks and building joint research teams, smart university management systems."
+            ],
+            [
+              "Libraries, publishers and archives",
+              "Digitising and indexing heritage and manuscripts with OCR, digital archives, administration automation with an AI agent."
+            ],
+            [
+              "Government bodies, factories and farms",
+              "Predictive models for productivity and failures, agricultural, industrial and environmental studies and consulting, AI agents and automation."
+            ],
+            [
+              "Schools, nurseries and training centres",
+              "Children's programmes in coding, AI, robotics, thinking and leadership, tech and summer camps, educational games."
+            ],
+            [
+              "Investors and partners",
+              "A business incubator for scientists' and researchers' ideas with profit sharing, the annual BAZ Academy Ambassador licence, authoring, publishing and children's content production."
+            ]
+          ]
+        },
+        {
+          "title": "Consulting and studies",
+          "text": "Teams of scientists and researchers in history, religion, science, medicine, agriculture, technology, engineering, education, psychology, management, accounting, statistics and programming. Example work: historical, religious, environmental and chemical studies, economic and investment studies and feasibility studies, research, statistical and educational consulting."
+        },
+        {
+          "title": "Software solutions and predictive AI",
+          "items": [
+            "Agriculture: forecasting crop productivity and improving seed selection.",
+            "Industry: predicting failures and improving operations.",
+            "Institutions: language models, AI agents, automation, apps, websites and university management systems, and a language model available through an API."
+          ]
+        },
+        {
+          "title": "International publishing",
+          "text": "Research teams from varied disciplines help prepare papers under supervision and review, aiming for publication in peer-reviewed journals. The package covers statistical analysis, translation, language editing, plagiarism checks, journal submission and following up on reviewer comments."
+        },
+        {
+          "title": "OCR and digital publishing",
+          "text": "Get more from your documents: scanned Arabic and English documents become fully editable, searchable text files using the precise RDI engine, alongside publishing and digital publishing for books, research and scientific content.",
+          "link": [
+            "About the OCR service",
+            "/products/ocr"
+          ]
+        },
+        {
+          "title": "University training initiative",
+          "text": "An initiative that trains a university's researchers on Schobot at no cost to the university. It targets four problems: delayed thesis defences, weak graduation projects, research that isn't ready for international publication, and the difficulty of updating university textbooks.",
+          "items": [
+            "What we offer: 4 practical training sessions within a week on Zoom, recorded for attendees, to train 10,000 faculty members and researchers, with a free tool package during the training and for 30 days after.",
+            "What we ask of partner universities: announce the partnership, enrol students and faculty, and publish the trainee survey results."
+          ],
+          "faq": [
+            [
+              "Does the programme replace the researcher?",
+              "No. It prepares a first draft; the researcher writes the study and is responsible for it."
+            ],
+            [
+              "Does the university pay anything?",
+              "There is no cost to the university for the training."
+            ],
+            [
+              "Is the certificate free?",
+              "The training certificate is optional and carries a fee. Contact us for details."
+            ]
+          ],
+          "link": [
+            "Initiative details and registration",
+            "/initiative"
+          ]
+        },
+        {
+          "title": "Optional packages for university members (after a 50% discount)",
+          "rows": [
+            [
+              "Monthly",
+              "$5"
+            ],
+            [
+              "Quarterly",
+              "$12.5"
+            ],
+            [
+              "Yearly",
+              "$50"
+            ]
+          ]
+        },
+        {
+          "title": "BAZ Academy Ambassador",
+          "text": "An annual licence to deliver BAZ Academy training programmes in several countries, with ready-made content and support teams.",
+          "link": [
+            "Licence terms",
+            "/contact"
+          ]
+        },
+        {
+          "title": "Future projects",
+          "text": "Coming soon: educational games whose content is written by scientists and researchers and built by Schobot developers."
+        }
+      ]
+    },
+    "initiative": {
+      "seoTitle": "Schobot's free initiative to train 10,000 researchers",
+      "eyebrow": "Free initiative",
+      "title": "Schobot's free initiative to train 10,000 faculty members and researchers",
+      "intro": "Hands-on training on Schobot, the AI research tool, plus academic writing and preparing for international publication. 10,000 seats, first come first served. The training, all its materials and the tool package are completely free, with no upfront payment or card details.",
+      "ctas": [
+        "Register for the initiative",
+        "Ask on WhatsApp"
+      ],
+      "sections": [
+        {
+          "title": "Why this initiative",
+          "text": "For 6 years Schobot has been building an AI tool for scientific research from Cairo. 84,000 users from 100 countries have used it, we have worked with 190 universities and educational institutions, and 200,000 researchers in 20 countries have trained with us since 2021 through free and paid training and events, with a team from 12 countries. (According to Schobot data)"
+        },
+        {
+          "title": "Problems it targets",
+          "items": [
+            "Weak student performance in graduation projects and difficulty with research.",
+            "Master's and PhD students falling behind on their research and defences.",
+            "The difficulty of updating a university textbook with the latest studies in several languages.",
+            "The difficulty of preparing research that can be published in international journals."
+          ]
+        },
+        {
+          "title": "Four tracks",
+          "text": "Choose one track when you register.",
+          "rows": [
+            [
+              "Pre-university and undergraduate students",
+              "Literature analysis, finding research gaps, a documented first draft of a graduation project, gathering information from studies in different languages."
+            ],
+            [
+              "Postgraduate students",
+              "Advanced literature analysis, enriching theses with studies in 5 languages, building methodology and measures and discussing results."
+            ],
+            [
+              "Faculty members",
+              "A practical exercise updating a full chapter of a university textbook with multilingual studies."
+            ],
+            [
+              "Researchers and international publishing",
+              "Preparing articles and reviews, finding publishable gaps, using studies in other languages to support the thesis."
+            ]
+          ]
+        },
+        {
+          "title": "How the training is structured",
+          "text": "4 sessions within a week, each 1.5 to 2 hours, on Zoom and recorded for attendees: two training sessions (theory and guided practice) and two self-directed practice sessions on your own research, supervised by specialists."
+        },
+        {
+          "title": "What participants get",
+          "items": [
+            "New research gaps ready to write about.",
+            "A practical plan for their thesis, paper or university textbook.",
+            "A multilingual reference list they extract themselves with the tool.",
+            "Academic writing training.",
+            "A free tool package during the training and for 30 days after.",
+            "A digital training kit (files, examples and short videos).",
+            "Follow-up from specialist supervisors and a small research team to build an academic network."
+          ]
+        },
+        {
+          "title": "Language, certificate and privacy",
+          "items": [
+            "Language: mainly Arabic, with materials in English and French, and full training in English or French for groups that ask.",
+            "Certificate: an optional attendance certificate for an administrative fee; not required to take part.",
+            "Privacy: participants' data and research are protected under the approved privacy policy; WhatsApp group links are sent to the registered email."
+          ]
+        },
+        {
+          "title": "Who can take part",
+          "items": [
+            "Seriousness, commitment and hands-on practice.",
+            "A normal internet connection and a suitable device (a laptop is preferred).",
+            "No prior knowledge of the tool is needed.",
+            "Choose one track when you register."
+          ]
+        },
+        {
+          "title": "After the initiative",
+          "text": "For those who complete it (attending the practical sessions and finishing the tasks): joining the research teams initiative and the in-person Schobot conference in Cairo."
+        },
+        {
+          "title": "Frequently asked questions",
+          "faq": [
+            [
+              "Is the initiative free?",
+              "Yes. Only the certificate is optional and carries a fee."
+            ],
+            [
+              "Does the tool write my research?",
+              "No. It helps with research and prepares a documented first draft; reviewing it is the researcher's responsibility."
+            ],
+            [
+              "Do I need prior knowledge?",
+              "No."
+            ],
+            [
+              "What happens after I register?",
+              "The WhatsApp group link for your track is sent to your email, and dates are announced there."
+            ],
+            [
+              "Can the training be in English or French?",
+              "Yes, for groups that ask for it."
+            ]
+          ]
+        },
+        {
+          "title": "Register and contact",
+          "rows": [
+            [
+              "Registration form",
+              "forms.gle/q4v3qXj7vcNoKBzu6",
+              "https://forms.gle/q4v3qXj7vcNoKBzu6"
+            ],
+            [
+              "Initiative WhatsApp",
+              "+20 105 542 8293",
+              "https://wa.me/201055428293"
+            ],
+            [
+              "Email",
+              "info@schobot.com",
+              "mailto:info@schobot.com"
+            ]
+          ]
+        }
+      ]
+    },
+    "impact": {
+      "seoTitle": "Schobot partners and success stories",
+      "eyebrow": "Partners & impact",
+      "title": "Partnerships that create lasting knowledge value",
+      "intro": "We work with universities, educational and research institutions, training centres and experts to develop initiatives and programmes that strengthen learning, scientific output and capacity building. The impact of a partnership shows in the results it brings to beneficiaries and institutions.",
+      "ctas": [
+        "Discuss collaboration"
+      ],
+      "sections": [
+        {
+          "title": "What you will find here",
+          "items": [
+            "Our partners: logos and names of institutions with documented approval to use them.",
+            "Success stories: short cases covering the need, the solution and the result.",
+            "Beneficiary testimonials: quotes approved by their authors, with role and institution.",
+            "Programmes and initiatives: what has actually been delivered.",
+            "Institutional collaboration: an invitation to universities, schools and training centres to discuss working together."
+          ]
+        },
+        {
+          "title": "Status of this section",
+          "text": "Logos, success stories and testimonials are added to this page once they are documented and approved for publication by their owners."
+        }
+      ]
+    },
+    "knowledge": {
+      "seoTitle": "Knowledge Hub | Research, AI and education",
+      "eyebrow": "Knowledge Hub",
+      "title": "Trusted content on research, education and AI",
+      "intro": "Articles, guides and resources that build our knowledge presence, being prepared and published over time.",
+      "soon": true,
+      "ctas": [
+        "Suggest a topic"
+      ],
+      "sections": [
+        {
+          "title": "Topics",
+          "items": [
+            "Scientific research and academic writing.",
+            "Responsible AI and the ethics of use.",
+            "Digital education and developing children's skills.",
+            "Academic and professional development.",
+            "Digitising knowledge and sustainable development in education.",
+            "Schobot news, events and initiatives.",
+            "Guides and frequently asked questions."
+          ]
+        },
+        {
+          "title": "Publishing standards",
+          "text": "Articles carry the publication and update dates and the name of the author or editorial team, with citations and information reviewed before publishing."
+        }
+      ]
+    },
+    "news": {
+      "seoTitle": "Announcements, news and training | Schobot",
+      "eyebrow": "Announcements & news",
+      "title": "Schobot announcements, news and training clips",
+      "intro": "BAZ Academy programmes and events, news about Schobot products, training clips and links to our social platforms.",
+      "ctas": [
+        "Watch on YouTube"
+      ],
+      "sections": [
+        {
+          "title": "Announcements and news",
+          "items": [
+            "Announcement: the university training initiative.",
+            "Coming soon: educational games."
+          ],
+          "link": [
+            "Training initiative details",
+            "/initiative"
+          ]
+        },
+        {
+          "title": "Training clips on YouTube",
+          "text": "The clip available now is a demo of the Schobot platform. More clips are added over time.",
+          "link": [
+            "Schobot on YouTube",
+            "https://youtube.com/@schobotofficialchannel"
+          ]
+        },
+        {
+          "title": "Social platforms",
+          "rows": [
+            [
+              "YouTube",
+              "youtube.com/@schobotofficialchannel",
+              "https://youtube.com/@schobotofficialchannel"
+            ],
+            [
+              "Instagram",
+              "instagram.com/bazacademy",
+              "https://instagram.com/bazacademy"
+            ],
+            [
+              "TikTok",
+              "tiktok.com/@baz.academy.schob",
+              "https://tiktok.com/@baz.academy.schob"
+            ],
+            [
+              "LinkedIn",
+              "linkedin.com/in/baz-academy-schobot-3a0289423",
+              "https://linkedin.com/in/baz-academy-schobot-3a0289423"
+            ]
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "seoTitle": "Contact Schobot | Enquiries, partnerships and support",
+      "eyebrow": "Contact us",
+      "title": "Let's talk and build new opportunities for knowledge, learning and growth.",
+      "intro": "Whether you are a researcher, learner, parent, or represent a university, educational institution or training body, we are glad to hear your enquiry and discuss the best way to use our products or work with us."
+    }
+  },
+  "ContactForm": {
+    "heading": "Send your enquiry",
+    "hint": "Sending opens your email app with a ready message to info@schobot.com.",
+    "name": "Name",
+    "email": "Email",
+    "country": "Country",
+    "org": "Organisation (optional)",
+    "role": "You are a",
+    "roles": [
+      "Researcher",
+      "Student",
+      "Parent",
+      "Institution",
+      "Trainer",
+      "Partner",
+      "Other"
+    ],
+    "interest": "Product or area of interest",
+    "subject": "Subject",
+    "message": "Enquiry details",
+    "consent": "I agree to the privacy policy.",
+    "send": "Send enquiry",
+    "partner": "Request institutional collaboration",
+    "support": "Get support",
+    "mailSubject": "Enquiry from the Schobot website"
   }
 }

@@ -14,7 +14,13 @@
     "dropPublishing": "Édition numérique",
     "miniTagline": "Un écosystème intégré pour le savoir, l'éducation, le conseil et la technologie",
     "openMenu": "Ouvrir la navigation",
-    "closeMenu": "Fermer la navigation"
+    "closeMenu": "Fermer la navigation",
+    "partnerships": "Partenariats",
+    "initiative": "Initiative de formation",
+    "resources": "Plus",
+    "impact": "Partenaires et impact",
+    "knowledge": "Centre de connaissances",
+    "news": "Annonces et actualités"
   },
   "Hero": {
     "s1eyebrow": "ÉCOSYSTÈME SCHOBOT",
@@ -436,5 +442,462 @@
     "back": "Tous les produits",
     "soon": "Bientôt disponible",
     "noteLabel": "Remarque"
+  },
+  "WhyUs": {
+    "eyebrow": "Pourquoi Schobot",
+    "heading": "Un seul écosystème qui relie savoir, apprentissage et technologie.",
+    "items": [
+      [
+        "Intégration",
+        "Éducation, formation, recherche et technologie réunies dans un même écosystème."
+      ],
+      [
+        "Spécialisation",
+        "Des solutions conçues pour les besoins de publics précis."
+      ],
+      [
+        "Autonomisation",
+        "Passer de l'acquisition du savoir à son application."
+      ],
+      [
+        "Technologie responsable",
+        "Outils numériques et IA, avec supervision humaine et intégrité."
+      ],
+      [
+        "Collaboration",
+        "Soutenir les communautés éducatives et de recherche et partager l'expertise."
+      ],
+      [
+        "Amélioration continue",
+        "Améliorer produits et services selon les besoins des utilisateurs."
+      ],
+      [
+        "Développement durable",
+        "Ouvrir l'accès au savoir et à l'apprentissage et renforcer les capacités."
+      ],
+      [
+        "Numérisation du savoir",
+        "Transformer le savoir imprimé en savoir numérique consultable et utilisable."
+      ]
+    ]
+  },
+  "Paths": {
+    "eyebrow": "Partenariats",
+    "heading": "Nos voies de partenariat",
+    "body": "Nous travaillons avec des universités, des centres de recherche, des organismes publics, des écoles et des éditeurs. Choisissez ce qui vous convient, ou commencez par un partenariat global.",
+    "items": [
+      "Programme de recherche",
+      "BAZ Academy",
+      "Conseil",
+      "Logiciels et IA prédictive",
+      "Publication internationale",
+      "Initiative universitaire"
+    ],
+    "cta": "Découvrir les domaines de partenariat"
+  },
+  "AboutValues": {
+    "eyebrow": "Nos valeurs",
+    "title": "Ce à quoi nous nous engageons",
+    "items": [
+      "Humanité et autonomisation",
+      "Qualité et savoir-faire",
+      "Crédibilité et intégrité",
+      "Innovation et apprentissage continu",
+      "Collaboration et partage du savoir",
+      "Responsabilité et confidentialité"
+    ]
+  },
+  "PageCommon": {
+    "soon": "Bientôt",
+    "home": "Accueil",
+    "openLink": "Ouvrir le lien"
+  },
+  "Pages": {
+    "partnerships": {
+      "seoTitle": "Partenariats et services Schobot | Universités, institutions et écoles",
+      "eyebrow": "Partenariats et services",
+      "title": "Partenariats et services pour universités, institutions et écoles",
+      "intro": "Nous travaillons avec des universités, des centres de recherche, des organismes publics, des usines, des écoles, des crèches et des éditeurs. Choisissez ce qui vous convient, ou commencez par un partenariat global couvrant tous les domaines. Nous croyons aux partenariats fondés sur des objectifs clairs, des expertises complémentaires et une valeur partagée.",
+      "ctas": [
+        "Demander un rendez-vous de présentation",
+        "Découvrir les domaines de partenariat"
+      ],
+      "sections": [
+        {
+          "id": "paths",
+          "title": "Voies de partenariat",
+          "rows": [
+            [
+              "Universités et centres de recherche",
+              "Initiative de formation des chercheurs à Schobot, aide à la préparation des recherches pour publication, mise à jour des manuels universitaires et création d'équipes de recherche communes, systèmes de gestion universitaire intelligents."
+            ],
+            [
+              "Bibliothèques, éditeurs et archives",
+              "Numérisation et indexation du patrimoine et des manuscrits par OCR, archives numériques, automatisation de l'administration par agent intelligent."
+            ],
+            [
+              "Organismes publics, usines et exploitations agricoles",
+              "Modèles prédictifs de productivité et de pannes, études et conseil agricoles, industriels et environnementaux, agents intelligents et automatisation."
+            ],
+            [
+              "Écoles, crèches et centres de formation",
+              "Programmes pour enfants en programmation, IA, robotique, réflexion et leadership, camps technologiques et d'été, jeux éducatifs."
+            ],
+            [
+              "Investisseurs et partenaires",
+              "Incubateur pour les idées de scientifiques et de chercheurs avec partage des bénéfices, licence annuelle « Ambassadeur BAZ Academy », rédaction, édition et production de contenus pour enfants."
+            ]
+          ]
+        },
+        {
+          "title": "Conseil et études",
+          "text": "Des équipes de scientifiques et de chercheurs en histoire, religion, sciences, médecine, agriculture, technologie, ingénierie, éducation, psychologie, gestion, comptabilité, statistique et programmation. Exemples : études historiques, religieuses, environnementales et chimiques, études économiques, d'investissement et de faisabilité, conseil en recherche, en statistique et en éducation."
+        },
+        {
+          "title": "Solutions logicielles et IA prédictive",
+          "items": [
+            "Agriculture : prévoir le rendement des cultures et améliorer le choix des semences.",
+            "Industrie : anticiper les pannes et améliorer l'exploitation.",
+            "Institutions : modèles de langage, agents intelligents, automatisation, applications, sites et systèmes de gestion universitaire, et un modèle de langage accessible par API."
+          ]
+        },
+        {
+          "title": "Publication internationale",
+          "text": "Des équipes de recherche de disciplines variées participent à la préparation des articles sous supervision et relecture, avec l'objectif de publier dans des revues à comité de lecture. Le forfait comprend l'analyse statistique, la traduction, la relecture linguistique, la détection de plagiat, la soumission aux revues et le suivi des remarques des relecteurs."
+        },
+        {
+          "title": "OCR et édition numérique",
+          "text": "Donnez plus de valeur à vos documents : convertissez des documents arabes et anglais numérisés en fichiers texte entièrement modifiables et consultables grâce au moteur RDI précis, avec des services d'édition et d'édition numérique pour livres, recherches et contenus scientifiques.",
+          "link": [
+            "À propos du service OCR",
+            "/products/ocr"
+          ]
+        },
+        {
+          "title": "Initiative de formation pour les universités",
+          "text": "Une initiative qui forme les chercheurs d'une université à Schobot sans frais pour l'université. Elle cible quatre problèmes : soutenances de thèses retardées, projets de fin d'études faibles, recherches peu aptes à la publication internationale et difficulté à mettre à jour le manuel universitaire.",
+          "items": [
+            "Ce que nous offrons : 4 séances pratiques en une semaine sur Zoom, enregistrées pour les participants, pour former 10 000 enseignants et chercheurs, avec un forfait gratuit de l'outil pendant la formation et 30 jours après.",
+            "Ce que nous demandons aux universités partenaires : annoncer le partenariat, inscrire étudiants et enseignants, et publier les résultats de l'enquête auprès des stagiaires."
+          ],
+          "faq": [
+            [
+              "Le programme remplace-t-il le chercheur ?",
+              "Non. Il prépare un premier brouillon ; le chercheur rédige son étude et en est responsable."
+            ],
+            [
+              "L'université doit-elle payer ?",
+              "Aucun coût pour l'université pour la formation."
+            ],
+            [
+              "Le certificat est-il gratuit ?",
+              "Le certificat de formation est facultatif et payant. Contactez-nous pour les détails."
+            ]
+          ],
+          "link": [
+            "Détails de l'initiative et inscription",
+            "/initiative"
+          ]
+        },
+        {
+          "title": "Forfaits facultatifs pour les membres de l'université (après 50 % de remise)",
+          "rows": [
+            [
+              "Mensuel",
+              "5 $"
+            ],
+            [
+              "Trimestriel",
+              "12,5 $"
+            ],
+            [
+              "Annuel",
+              "50 $"
+            ]
+          ]
+        },
+        {
+          "title": "Ambassadeur BAZ Academy",
+          "text": "Une licence annuelle permettant de proposer les programmes de formation BAZ Academy dans plusieurs pays, avec contenu prêt à l'emploi et équipes de soutien.",
+          "link": [
+            "Conditions de la licence",
+            "/contact"
+          ]
+        },
+        {
+          "title": "Projets à venir",
+          "text": "Bientôt : des jeux éducatifs dont le contenu est conçu par des scientifiques et des chercheurs et réalisé par les développeurs de Schobot."
+        }
+      ]
+    },
+    "initiative": {
+      "seoTitle": "Initiative gratuite de Schobot pour former 10 000 chercheurs",
+      "eyebrow": "Initiative gratuite",
+      "title": "Initiative gratuite de Schobot pour former 10 000 enseignants et chercheurs",
+      "intro": "Formation pratique à Schobot, l'outil d'IA pour la recherche, à la rédaction scientifique et à la préparation à la publication internationale. 10 000 places, par ordre d'inscription. La formation, tous ses supports et le forfait de l'outil sont entièrement gratuits, sans paiement préalable ni données de carte bancaire.",
+      "ctas": [
+        "S'inscrire à l'initiative",
+        "Poser une question sur WhatsApp"
+      ],
+      "sections": [
+        {
+          "title": "Pourquoi cette initiative",
+          "text": "Depuis 6 ans, Schobot développe depuis Le Caire un outil d'IA spécialisé dans la recherche scientifique. 84 000 utilisateurs de 100 pays l'ont utilisé, nous avons collaboré avec 190 universités et établissements éducatifs, et 200 000 chercheurs de 20 pays se sont formés avec nous depuis 2021 via des formations gratuites et payantes et des événements, avec une équipe de 12 pays. (D'après les données de Schobot)"
+        },
+        {
+          "title": "Problèmes ciblés",
+          "items": [
+            "Faibles performances des étudiants dans les projets de fin d'études et difficulté à faire de la recherche.",
+            "Retard des étudiants de master et de doctorat dans leurs recherches et leurs soutenances.",
+            "Difficulté à mettre à jour un manuel universitaire avec les dernières études en plusieurs langues.",
+            "Difficulté à préparer des recherches publiables dans des revues internationales."
+          ]
+        },
+        {
+          "title": "Quatre parcours",
+          "text": "Choisissez un seul parcours à l'inscription.",
+          "rows": [
+            [
+              "Étudiants de pré-université et de licence",
+              "Analyse de la littérature, repérage des lacunes de recherche, premier brouillon documenté d'un projet de fin d'études, collecte d'informations à partir d'études en différentes langues."
+            ],
+            [
+              "Étudiants de cycles supérieurs",
+              "Analyse avancée de la littérature, enrichissement des thèses par des études en 5 langues, construction de la méthodologie et des mesures, discussion des résultats."
+            ],
+            [
+              "Enseignants-chercheurs",
+              "Application pratique : mise à jour d'un chapitre entier d'un manuel universitaire avec des études multilingues."
+            ],
+            [
+              "Chercheurs et publication internationale",
+              "Préparation d'articles et de revues de littérature, repérage de lacunes publiables, mobilisation d'études en d'autres langues pour appuyer la thèse."
+            ]
+          ]
+        },
+        {
+          "title": "Organisation de la formation",
+          "text": "4 séances en une semaine, de 1 h 30 à 2 h chacune, sur Zoom et enregistrées pour les participants : deux séances de formation (théorie et pratique guidée) et deux séances de pratique autonome sur votre propre recherche, encadrées par des spécialistes."
+        },
+        {
+          "title": "Ce que reçoit le participant",
+          "items": [
+            "De nouvelles lacunes de recherche prêtes à être traitées.",
+            "Un plan d'application pour sa thèse, sa recherche ou son manuel universitaire.",
+            "Une liste de références multilingues qu'il extrait lui-même avec l'outil.",
+            "Une formation à la rédaction académique.",
+            "Un forfait gratuit de l'outil pendant la formation et 30 jours après.",
+            "Un kit de formation numérique (fichiers, exemples et courtes vidéos).",
+            "Un suivi par des encadrants spécialisés et une petite équipe de recherche pour construire un réseau académique."
+          ]
+        },
+        {
+          "title": "Langue, certificat et confidentialité",
+          "items": [
+            "Langue : principalement l'arabe, avec des supports en anglais et en français, et une formation complète en anglais ou en français pour les groupes qui le demandent.",
+            "Certificat : attestation de présence facultative moyennant des frais administratifs ; non requise pour participer.",
+            "Confidentialité : les données et recherches des participants sont protégées selon la politique de confidentialité approuvée ; les liens des groupes WhatsApp sont envoyés à l'adresse e-mail enregistrée."
+          ]
+        },
+        {
+          "title": "Conditions de participation",
+          "items": [
+            "Sérieux, engagement et pratique.",
+            "Une connexion internet ordinaire et un appareil adapté (un ordinateur portable de préférence).",
+            "Aucune connaissance préalable de l'outil n'est requise.",
+            "Choisir un seul parcours à l'inscription."
+          ]
+        },
+        {
+          "title": "Après l'initiative",
+          "text": "Pour ceux qui la terminent avec succès (présence aux séances pratiques et réalisation des tâches) : intégration à l'initiative des équipes de recherche et à la conférence Schobot en présentiel au Caire."
+        },
+        {
+          "title": "Questions fréquentes",
+          "faq": [
+            [
+              "L'initiative est-elle gratuite ?",
+              "Oui. Seul le certificat est facultatif et payant."
+            ],
+            [
+              "L'outil rédige-t-il ma recherche ?",
+              "Non. Il aide à la recherche et prépare un premier brouillon documenté ; la relecture incombe au chercheur."
+            ],
+            [
+              "Faut-il des connaissances préalables ?",
+              "Non."
+            ],
+            [
+              "Que se passe-t-il après l'inscription ?",
+              "Le lien du groupe WhatsApp de votre parcours est envoyé par e-mail et les dates y sont annoncées."
+            ],
+            [
+              "La formation peut-elle se faire en anglais ou en français ?",
+              "Oui, pour les groupes qui le demandent."
+            ]
+          ]
+        },
+        {
+          "title": "Inscription et contact",
+          "rows": [
+            [
+              "Formulaire d'inscription",
+              "forms.gle/q4v3qXj7vcNoKBzu6",
+              "https://forms.gle/q4v3qXj7vcNoKBzu6"
+            ],
+            [
+              "WhatsApp de l'initiative",
+              "+20 105 542 8293",
+              "https://wa.me/201055428293"
+            ],
+            [
+              "E-mail",
+              "info@schobot.com",
+              "mailto:info@schobot.com"
+            ]
+          ]
+        }
+      ]
+    },
+    "impact": {
+      "seoTitle": "Partenaires et réussites de Schobot",
+      "eyebrow": "Partenaires et impact",
+      "title": "Des partenariats qui créent une valeur durable pour le savoir",
+      "intro": "Nous travaillons avec des universités, des établissements éducatifs et de recherche, des centres de formation et des experts pour développer des initiatives et des programmes qui renforcent l'apprentissage, la production scientifique et les capacités. L'impact d'un partenariat se voit dans les résultats obtenus par les bénéficiaires et les institutions.",
+      "ctas": [
+        "Discuter d'une collaboration"
+      ],
+      "sections": [
+        {
+          "title": "Ce que vous trouverez ici",
+          "items": [
+            "Nos partenaires : logos et noms des institutions ayant donné une autorisation documentée.",
+            "Réussites : courts cas présentant le besoin, la solution et le résultat.",
+            "Témoignages : citations approuvées par leurs auteurs, avec fonction et institution.",
+            "Programmes et initiatives : ce qui a réellement été réalisé.",
+            "Collaboration institutionnelle : invitation aux universités, écoles et centres de formation à étudier une coopération."
+          ]
+        },
+        {
+          "title": "État de cette rubrique",
+          "text": "Les logos, réussites et témoignages sont ajoutés à cette page une fois documentés et approuvés pour publication par leurs propriétaires."
+        }
+      ]
+    },
+    "knowledge": {
+      "seoTitle": "Centre de connaissances | Recherche, IA et éducation",
+      "eyebrow": "Centre de connaissances",
+      "title": "Des contenus fiables sur la recherche, l'éducation et l'IA",
+      "intro": "Articles, guides et ressources qui renforcent notre présence intellectuelle, préparés et publiés progressivement.",
+      "soon": true,
+      "ctas": [
+        "Proposer un sujet"
+      ],
+      "sections": [
+        {
+          "title": "Thèmes",
+          "items": [
+            "Recherche scientifique et rédaction académique.",
+            "IA responsable et éthique d'utilisation.",
+            "Éducation numérique et développement des compétences des enfants.",
+            "Développement académique et professionnel.",
+            "Numérisation du savoir et développement durable dans l'éducation.",
+            "Actualités, événements et initiatives de Schobot.",
+            "Guides pratiques et questions fréquentes."
+          ]
+        },
+        {
+          "title": "Règles de publication",
+          "text": "Les articles indiquent les dates de publication et de mise à jour et le nom de l'auteur ou de l'équipe éditoriale, avec relecture des citations et des informations avant publication."
+        }
+      ]
+    },
+    "news": {
+      "seoTitle": "Annonces, actualités et formation | Schobot",
+      "eyebrow": "Annonces et actualités",
+      "title": "Annonces, actualités et vidéos de formation Schobot",
+      "intro": "Programmes et événements BAZ Academy, actualités des produits Schobot, vidéos de formation et liens vers nos plateformes sociales.",
+      "ctas": [
+        "Voir sur YouTube"
+      ],
+      "sections": [
+        {
+          "title": "Annonces et actualités",
+          "items": [
+            "Annonce : l'initiative de formation pour les universités.",
+            "Bientôt : des jeux éducatifs numériques."
+          ],
+          "link": [
+            "Détails de l'initiative de formation",
+            "/initiative"
+          ]
+        },
+        {
+          "title": "Vidéos de formation sur YouTube",
+          "text": "La vidéo disponible actuellement est une démonstration de la plateforme Schobot. D'autres vidéos seront ajoutées au fil du temps.",
+          "link": [
+            "Schobot sur YouTube",
+            "https://youtube.com/@schobotofficialchannel"
+          ]
+        },
+        {
+          "title": "Plateformes sociales",
+          "rows": [
+            [
+              "YouTube",
+              "youtube.com/@schobotofficialchannel",
+              "https://youtube.com/@schobotofficialchannel"
+            ],
+            [
+              "Instagram",
+              "instagram.com/bazacademy",
+              "https://instagram.com/bazacademy"
+            ],
+            [
+              "TikTok",
+              "tiktok.com/@baz.academy.schob",
+              "https://tiktok.com/@baz.academy.schob"
+            ],
+            [
+              "LinkedIn",
+              "linkedin.com/in/baz-academy-schobot-3a0289423",
+              "https://linkedin.com/in/baz-academy-schobot-3a0289423"
+            ]
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "seoTitle": "Contacter Schobot | Demandes, partenariats et assistance",
+      "eyebrow": "Contactez-nous",
+      "title": "Échangeons et construisons de nouvelles opportunités pour le savoir, l'apprentissage et le développement.",
+      "intro": "Que vous soyez chercheur, apprenant, parent ou représentant d'une université, d'un établissement éducatif ou d'un organisme de formation, nous serons heureux de recevoir votre demande et d'étudier la meilleure façon d'utiliser nos produits ou de collaborer avec nous."
+    }
+  },
+  "ContactForm": {
+    "heading": "Envoyer votre demande",
+    "hint": "L'envoi ouvre votre application de messagerie avec un message prêt pour info@schobot.com.",
+    "name": "Nom",
+    "email": "E-mail",
+    "country": "Pays",
+    "org": "Organisation (facultatif)",
+    "role": "Vous êtes",
+    "roles": [
+      "Chercheur",
+      "Étudiant",
+      "Parent",
+      "Institution",
+      "Formateur",
+      "Partenaire",
+      "Autre"
+    ],
+    "interest": "Produit ou domaine d'intérêt",
+    "subject": "Objet",
+    "message": "Détails de la demande",
+    "consent": "J'accepte la politique de confidentialité.",
+    "send": "Envoyer la demande",
+    "partner": "Demander une collaboration institutionnelle",
+    "support": "Obtenir de l'aide",
+    "mailSubject": "Demande depuis le site Schobot"
   }
 }

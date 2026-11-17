@@ -2816,3 +2816,58 @@ a {
 .channel-value { font-size: 16px; color: var(--navy, #07384D); }
 a.channel-value:hover { color: var(--green-dark, #007D78); text-decoration: underline; }
 .channel-ltr { unicode-bidi: plaintext; text-align: start; }
+
+/* ─────────────────────────────────────────
+   Why Schobot / Partnership paths (home)
+───────────────────────────────────────── */
+html { scroll-padding-block-start: 96px; }
+
+.why-section { background: var(--white); }
+.why-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 40px;
+}
+.why-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0 40px;
+}
+.why-list li { padding-block: 20px; border-block-end: 1px solid var(--border); }
+.why-list h3 { margin: 0 0 6px; font-size: 18px; font-weight: 700; color: var(--navy); }
+.why-list p { margin: 0; line-height: 1.8; color: var(--muted); }
+@media (min-width: 640px) { .why-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) {
+  .why-grid { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 64px; }
+  .why-intro { position: sticky; inset-block-start: 112px; align-self: start; }
+}
+
+.paths-section { background: var(--background-soft); }
+.paths-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+.paths-body { margin: 16px 0 28px; max-width: 52ch; line-height: 1.85; color: var(--muted); }
+.paths-cta { border-radius: 12px; font-size: 15px; }
+.paths-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.paths-list li {
+  padding: 12px 20px;
+  border: 1px solid var(--green);
+  border-radius: 999px;
+  background: var(--white);
+  font-weight: 600;
+  color: var(--navy);
+}
+@media (min-width: 1000px) { .paths-inner { grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); gap: 64px; } }

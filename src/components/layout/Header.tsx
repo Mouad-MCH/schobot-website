@@ -8,6 +8,13 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import LanguageSwitch from "@/components/ui/LanguageSwitch";
 
+const RESOURCE_LINKS = [
+  { href: "/impact", key: "impact" },
+  { href: "/knowledge", key: "knowledge" },
+  { href: "/news", key: "news" },
+  { href: "/contact", key: "contact" },
+] as const;
+
 export default function Header() {
   const t = useTranslations("Navigation");
   const locale = useLocale();
@@ -136,19 +143,28 @@ export default function Header() {
               </div>
             </div>
 
-            <Link
-              href="/#products"
-              className="nav-link"
-            >
-              {t("whatWeBuild")}
+            <Link href="/partnerships" className="nav-link">
+              {t("partnerships")}
             </Link>
 
-            <Link
-              href="/#industries"
-              className="nav-link"
-            >
-              {t("forLearners")}
+            <Link href="/initiative" className="nav-link">
+              {t("initiative")}
             </Link>
+
+            {/* Resources dropdown */}
+            <div className="nav-dropdown">
+              <button type="button" className="nav-link nav-dropdown-trigger">
+                {t("resources")}
+                <ChevronDown size={12} aria-hidden="true" />
+              </button>
+              <div className="nav-dropdown-panel">
+                {RESOURCE_LINKS.map(({ href, key }) => (
+                  <Link key={href} href={href} className="nav-dropdown-link">
+                    {t(key)}
+                  </Link>
+                ))}
+              </div>
+            </div>
 
             <Link
               href="/about"
@@ -286,21 +302,19 @@ export default function Header() {
               )}
             </div>
 
-            <Link
-              href="/#products"
-              className="nav-mobile-link"
-              onClick={closeAll}
-            >
-              {t("whatWeBuild")}
+            <Link href="/partnerships" className="nav-mobile-link" onClick={closeAll}>
+              {t("partnerships")}
             </Link>
 
-            <Link
-              href="/#industries"
-              className="nav-mobile-link"
-              onClick={closeAll}
-            >
-              {t("forLearners")}
+            <Link href="/initiative" className="nav-mobile-link" onClick={closeAll}>
+              {t("initiative")}
             </Link>
+
+            {RESOURCE_LINKS.map(({ href, key }) => (
+              <Link key={href} href={href} className="nav-mobile-link" onClick={closeAll}>
+                {t(key)}
+              </Link>
+            ))}
 
             <Link
               href="/about"

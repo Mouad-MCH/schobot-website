@@ -2,22 +2,24 @@ import { getTranslations } from "next-intl/server";
 
 const LTR = { dir: "ltr" as const, className: "channel-value channel-ltr" };
 
-export default async function ContactChannels() {
+export default async function ContactChannels({ hideHeading = false }: { hideHeading?: boolean }) {
   const t = await getTranslations("ContactChannels");
 
   return (
     <section
       className="section channels-section"
-      aria-labelledby="channels-heading"
+      {...(hideHeading ? { "aria-label": t("eyebrow") } : { "aria-labelledby": "channels-heading" })}
       id="channels"
     >
       <div className="wrap">
-        <div className="section-center-title">
-          <p className="section-eyebrow">{t("eyebrow")}</p>
-          <h2 id="channels-heading" className="section-main-heading">
-            {t("heading")}
-          </h2>
-        </div>
+        {!hideHeading && (
+          <div className="section-center-title">
+            <p className="section-eyebrow">{t("eyebrow")}</p>
+            <h2 id="channels-heading" className="section-main-heading">
+              {t("heading")}
+            </h2>
+          </div>
+        )}
 
         <div className="channels-grid">
           <article className="channel-card">
