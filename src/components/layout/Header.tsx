@@ -112,6 +112,27 @@ export default function Header() {
                 >
                   {t("dropBazAcademy")}
                 </NextLink>
+
+                <Link
+                  href="/products/quran"
+                  className="nav-dropdown-link"
+                >
+                  {t("dropQuran")}
+                </Link>
+
+                <Link
+                  href="/products/ocr"
+                  className="nav-dropdown-link"
+                >
+                  {t("dropOcr")}
+                </Link>
+
+                <Link
+                  href="/products/publishing"
+                  className="nav-dropdown-link"
+                >
+                  {t("dropPublishing")}
+                </Link>
               </div>
             </div>
 
@@ -237,6 +258,30 @@ export default function Header() {
                   >
                     {t("dropBazAcademy")}
                   </NextLink>
+
+                <Link
+                  href="/products/quran"
+                  className="nav-mobile-drop-link"
+                  onClick={closeAll}
+                >
+                  {t("dropQuran")}
+                </Link>
+
+                <Link
+                  href="/products/ocr"
+                  className="nav-mobile-drop-link"
+                  onClick={closeAll}
+                >
+                  {t("dropOcr")}
+                </Link>
+
+                <Link
+                  href="/products/publishing"
+                  className="nav-mobile-drop-link"
+                  onClick={closeAll}
+                >
+                  {t("dropPublishing")}
+                </Link>
                 </div>
               )}
             </div>
